@@ -1,0 +1,52 @@
+**IAM (Identity and Access Management)
+- Identity and Access Management (IAM) is a system of policies, technologies, and processes used to manage digital identities and control how users and devices access resources.
+- IAM includes creating and managing user accounts, defining roles and permissions, enforcing security policies, and tracking user activities.
+- Good IAM practices help protect sensitive data by making sure only authorized users can access specific systems or information.
+- IAM solutions often include features like single sign-on (SSO), multi-factor authentication (MFA), password policies, and auditing.
+- Examples of IAM tools and services include Azure Active Directory, AWS IAM, and Okta.
+**4 A's of IAM**
+**Authentication**
+- Verifying who the user is.  
+- **Key questions:**  
+  - Who are you?  
+  - How do you prove your identity?  
+  - Are your credentials valid?  
+- Example: Username + password, biometric scan, OTP.
+**Authorization 
+- Defining what the authenticated user is allowed to do.  
+- **Key questions:**  
+  - What resources can you access?  
+  - What actions are you permitted to perform?  
+- Example: Read, write, or delete permissions on files.
+**Accounting (or Audit)  
+- Tracking what the user did.  
+- **Key questions:**  
+  - What actions did you perform?  
+  - When did you perform them?  
+  - Were your actions compliant with policies?  
+- Example: Logging user activities and keeping audit trails for security and compliance.
+**Administration  
+- Managing and maintaining user identities, permissions, and policies throughout their lifecycle.  
+- **Key questions:**  
+  - How are user identities and permissions managed?  
+  - Who can create, modify, or revoke access?  
+  - How is access provisioned and de-provisioned over time?  
+- Example: Creating accounts, modifying roles, revoking access when an employee leaves.
+
+***
+ **MFA (Multi-Factor Authentication)
+- Multi-Factor Authentication (MFA) is a security process that requires users to provide two or more independent forms of evidence (factors) to verify their identity.
+- Factors are usually categorized as:
+  - Something you know (e.g., password or PIN)
+  - Something you have (e.g., smartphone, hardware token, smart card)
+  - Something you are (e.g., fingerprint, face recognition, retina scan)
+- MFA greatly reduces the risk of unauthorized access, even if a password is stolen, because the attacker would still need the other factors.
+- MFA is commonly used for securing online accounts, VPN access, and sensitive corporate systems.
+- Examples of MFA tools include Google Authenticator, Microsoft Authenticator, and hardware tokens like YubiKey.
+***
+**SSO (Single Sign-On)
+- Single Sign-On (SSO) is an authentication method that allows a user to log in once with a single set of credentials and then access multiple applications or systems without needing to log in again for each one.
+- SSO works by using a centralized identity provider (IdP) that handles authentication and issues trusted tokens to connected services.
+- This reduces password fatigue for users and lowers the risk of weak or reused passwords.
+- SSO also helps organizations manage user access more efficiently and can be integrated with IAM and MFA for stronger security.
+- Examples of SSO implementations include Google SSO, Microsoft SSO (Azure AD), and enterprise tools like Okta and OneLogin.
