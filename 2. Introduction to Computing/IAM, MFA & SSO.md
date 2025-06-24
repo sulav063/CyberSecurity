@@ -16,7 +16,7 @@
 - Example: Username + password, biometric scan, OTP.
 
 
-***Authorization***
+**Authorization**
 - Defining what the authenticated user is allowed to do.  
 - **Key questions:**  
   - What resources can you access?  
