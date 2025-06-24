@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "179726388a67fc01",
+        "id": "8497ff88d45d3381",
         "type": "tabs",
         "children": [
           {
-            "id": "e7003df58f62d2ce",
+            "id": "692ea97c19d5e966",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Introduction to Computing/IAM, MFA & SSO.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "IAM, MFA & SSO"
+              "title": "New tab"
             }
           }
         ]
@@ -162,17 +158,20 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7003df58f62d2ce",
+  "active": "3a806f7cc54b4f14",
   "lastOpenFiles": [
+    "Untitled.md",
+    "2. Introduction to Computing/IAM, MFA & SSO.md",
+    "CyberSecurity",
     "2. Introduction to Computing/Antivirus, EDR.md",
     "2. Introduction to Computing/Windows Components.md",
     "2. Introduction to Computing/Virtualization & Components.md",
     "2. Introduction to Computing/Operating System.md",
     "Pasted image 20250618183239.png",
-    "2. Introduction to Computing/IAM, MFA & SSO.md",
     "2. Introduction to Computing/Troubleshooting.md",
     "2. Introduction to Computing/Introduction to Computing.md",
     "2. Introduction to Computing/The Number System.md",
@@ -190,7 +189,6 @@
     "1. Introduction to Cyber security/Goals of Cyber security.md",
     "1. Introduction to Cyber security",
     "Cyber Security",
-    "Untitled.md",
     "Welcome.md"
   ]
 }
