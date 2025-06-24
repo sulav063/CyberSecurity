@@ -11,10 +11,14 @@
             "id": "692ea97c19d5e966",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2. Introduction to Computing/Troubleshooting.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Troubleshooting"
             }
           }
         ]
@@ -143,13 +147,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "eeff828bd4637a6f",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,8 +176,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3a806f7cc54b4f14",
+  "active": "692ea97c19d5e966",
   "lastOpenFiles": [
+    "2. Introduction to Computing/The Number System.md",
+    "2. Introduction to Computing/Troubleshooting.md",
     "Untitled.md",
     "2. Introduction to Computing/IAM, MFA & SSO.md",
     "CyberSecurity",
@@ -172,9 +188,7 @@
     "2. Introduction to Computing/Virtualization & Components.md",
     "2. Introduction to Computing/Operating System.md",
     "Pasted image 20250618183239.png",
-    "2. Introduction to Computing/Troubleshooting.md",
     "2. Introduction to Computing/Introduction to Computing.md",
-    "2. Introduction to Computing/The Number System.md",
     "2. Introduction to Computing/Bits and Bytes.md",
     "2. Introduction to Computing/Parts of Computer.md",
     "1. Introduction to Cyber security/Introduction.md",
