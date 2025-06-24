@@ -1,9 +1,10 @@
-**IAM (Identity and Access Management)
+**IAM (Identity and Access Management)**
 - Identity and Access Management (IAM) is a system of policies, technologies, and processes used to manage digital identities and control how users and devices access resources.
 - IAM includes creating and managing user accounts, defining roles and permissions, enforcing security policies, and tracking user activities.
 - Good IAM practices help protect sensitive data by making sure only authorized users can access specific systems or information.
 - IAM solutions often include features like single sign-on (SSO), multi-factor authentication (MFA), password policies, and auditing.
 - Examples of IAM tools and services include Azure Active Directory, AWS IAM, and Okta.
+
 **4 A's of IAM**
 **Authentication**
 - Verifying who the user is.  
@@ -34,7 +35,7 @@
 - Example: Creating accounts, modifying roles, revoking access when an employee leaves.
 
 ***
- **MFA (Multi-Factor Authentication)
+ **MFA (Multi-Factor Authentication)**
 - Multi-Factor Authentication (MFA) is a security process that requires users to provide two or more independent forms of evidence (factors) to verify their identity.
 - Factors are usually categorized as:
   - Something you know (e.g., password or PIN)
@@ -44,7 +45,7 @@
 - MFA is commonly used for securing online accounts, VPN access, and sensitive corporate systems.
 - Examples of MFA tools include Google Authenticator, Microsoft Authenticator, and hardware tokens like YubiKey.
 ***
-**SSO (Single Sign-On)
+**SSO (Single Sign-On)**
 - Single Sign-On (SSO) is an authentication method that allows a user to log in once with a single set of credentials and then access multiple applications or systems without needing to log in again for each one.
 - SSO works by using a centralized identity provider (IdP) that handles authentication and issues trusted tokens to connected services.
 - This reduces password fatigue for users and lowers the risk of weak or reused passwords.
