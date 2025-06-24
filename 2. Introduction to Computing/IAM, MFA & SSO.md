@@ -31,6 +31,7 @@
   - Were your actions compliant with policies?  
 - Example: Logging user activities and keeping audit trails for security and compliance.
 
+
 **Administration**
 - Managing and maintaining user identities, permissions, and policies throughout their lifecycle.  
 - **Key questions:**  
