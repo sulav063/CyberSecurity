@@ -15,14 +15,15 @@
   - Are your credentials valid?  
 - Example: Username + password, biometric scan, OTP.
 
-**Authorization 
+***Authorization***
 - Defining what the authenticated user is allowed to do.  
 - **Key questions:**  
   - What resources can you access?  
   - What actions are you permitted to perform?  
 - Example: Read, write, or delete permissions on files.
 
-**Accounting (or Audit)  
+
+**Accounting (or Audit)**
 - Tracking what the user did.  
 - **Key questions:**  
   - What actions did you perform?  
@@ -30,7 +31,7 @@
   - Were your actions compliant with policies?  
 - Example: Logging user activities and keeping audit trails for security and compliance.
 
-**Administration  
+**Administration **
 - Managing and maintaining user identities, permissions, and policies throughout their lifecycle.  
 - **Key questions:**  
   - How are user identities and permissions managed?  
