@@ -63,7 +63,7 @@
 
 ***
 
-**SSO (Single Sign-On)
+**SSO (Single Sign-On)**
 
 - Single Sign-On (SSO) is an authentication method that allows a user to log in once with a single set of credentials and then access multiple applications or systems without needing to log in again for each one.
 - SSO works by using a centralized identity provider (IdP) that handles authentication and issues trusted tokens to connected services.
