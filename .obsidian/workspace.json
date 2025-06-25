@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8497ff88d45d3381",
+        "id": "6d9ab088fe5d0739",
         "type": "tabs",
         "children": [
           {
-            "id": "692ea97c19d5e966",
+            "id": "671c80db7306e347",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Introduction to Computing/IAM, MFA & SSO.md",
+                "file": "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IAM, MFA & SSO"
+              "title": "Domains of Penetration Testing"
             }
           }
         ]
@@ -177,8 +177,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "692ea97c19d5e966",
+  "active": "671c80db7306e347",
   "lastOpenFiles": [
+    "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
+    "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
+    "3. Introduction to Ethical Hacking/Types of Hackers.md",
+    "3. Introduction to Ethical Hacking/What is Hacking.md",
+    "3. Introduction to Ethical Hacking/Introduction to Ethical Hacking.md",
+    "2. Introduction to Computing/Introduction to Computing.md",
+    "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
+    "3. Introduction to Ethical Hacking/The Ethical Hacking Methodology.md",
     "2. Introduction to Computing/IAM, MFA & SSO.md",
     "2. Introduction to Computing/Antivirus, EDR.md",
     "2. Introduction to Computing/Troubleshooting.md",
@@ -189,7 +197,6 @@
     "2. Introduction to Computing/Virtualization & Components.md",
     "2. Introduction to Computing/Operating System.md",
     "Pasted image 20250618183239.png",
-    "2. Introduction to Computing/Introduction to Computing.md",
     "2. Introduction to Computing/Bits and Bytes.md",
     "2. Introduction to Computing/Parts of Computer.md",
     "1. Introduction to Cyber security/Introduction.md",
@@ -203,7 +210,6 @@
     "1. Introduction to Cyber security/Need of Cyber security.md",
     "1. Introduction to Cyber security/Goals of Cyber security.md",
     "1. Introduction to Cyber security",
-    "Cyber Security",
-    "Welcome.md"
+    "Cyber Security"
   ]
 }
