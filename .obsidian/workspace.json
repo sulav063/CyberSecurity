@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
+                "file": "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Domains of Penetration Testing"
+              "title": "A day in the life of an ethical hacker"
             }
           }
         ]
@@ -179,14 +179,14 @@
   },
   "active": "671c80db7306e347",
   "lastOpenFiles": [
-    "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
+    "3. Introduction to Ethical Hacking/The Ethical Hacking Methodology.md",
     "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
+    "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
     "3. Introduction to Ethical Hacking/Types of Hackers.md",
     "3. Introduction to Ethical Hacking/What is Hacking.md",
     "3. Introduction to Ethical Hacking/Introduction to Ethical Hacking.md",
     "2. Introduction to Computing/Introduction to Computing.md",
     "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
-    "3. Introduction to Ethical Hacking/The Ethical Hacking Methodology.md",
     "2. Introduction to Computing/IAM, MFA & SSO.md",
     "2. Introduction to Computing/Antivirus, EDR.md",
     "2. Introduction to Computing/Troubleshooting.md",
