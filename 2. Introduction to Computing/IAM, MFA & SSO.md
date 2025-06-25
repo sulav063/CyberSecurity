@@ -69,7 +69,7 @@ SSO (Single Sign-On)
 - SSO works by using a centralized identity provider (IdP) that handles authentication and issues trusted tokens to connected services.
 - This reduces password fatigue for users and lowers the risk of weak or reused passwords.
 - SSO helps organizations manage user access more efficiently and can be integrated with IAM and MFA for stronger security.
-- **Benefits of SSO:**
+**Benefits of SSO:**
   - Simplifies the login process for users.
   - Reduces the number of passwords to remember and manage.
   - Improves productivity with faster access to multiple systems.
