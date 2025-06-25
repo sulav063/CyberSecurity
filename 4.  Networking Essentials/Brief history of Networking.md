@@ -10,13 +10,13 @@
 ***
 # Data vs Information
 
-| Aspect  | Data                    | Information                       |     |
-| ------- | ----------------------- | --------------------------------- | --- |
-| Meaning | Raw and unprocessed     | Processed and meaningful          |     |
-| Context | No context              | Has context                       |     |
-| Form    | Numbers, symbols, facts | Organized and structured          |     |
-| Example | `92, 85, 78`            | "Average score is 85"             |     |
-| Usage   | Input for processing    | Output for analysis and decisions |     |
+| Aspect  | Data                    | Information                       |
+| ------- | ----------------------- | --------------------------------- |
+| Meaning | Raw and unprocessed     | Processed and meaningful          |
+| Context | No context              | Has context                       |
+| Form    | Numbers, symbols, facts | Organized and structured          |
+| Example | `92, 85, 78`            | "Average score is 85"             |
+| Usage   | Input for processing    | Output for analysis and decisions |
 ***
 # Data Computing / Communications
 - **Data computing** involves processing and analyzing data using computing systems.
