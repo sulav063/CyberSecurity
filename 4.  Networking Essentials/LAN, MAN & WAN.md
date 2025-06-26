@@ -1,4 +1,4 @@
-# Types of Networks: LAN, MAN & WAN (Cybersecurity Context)
+# Types of Networks
 
 ## LAN (Local Area Network)
 - A **LAN** connects devices within a limited area such as a home, office, lab, or school.
