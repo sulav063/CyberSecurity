@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.  Networking Essentials/Networking Devices.md",
+                "file": "4.  Networking Essentials/OSI model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networking Devices"
+              "title": "OSI model"
             }
           }
         ]
@@ -180,6 +180,8 @@
   },
   "active": "96f8d8a5f653436d",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Networking Architecture.md",
+    "4.  Networking Essentials/Networking Devices.md",
     "4.  Networking Essentials/LAN, MAN & WAN.md",
     "4.  Networking Essentials/Brief history of Networking.md",
     "4.  Networking Essentials/Networking Essentials.md",
@@ -194,8 +196,6 @@
     "4.  Networking Essentials/IP Addresses.md",
     "4.  Networking Essentials/OSI model.md",
     "Untitled.md",
-    "4.  Networking Essentials/Networking Architecture.md",
-    "4.  Networking Essentials/Networking Devices.md",
     "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
     "4.  Networking Essentials",
     "3. Introduction to Ethical Hacking/The Ethical Hacking Methodology.md",
