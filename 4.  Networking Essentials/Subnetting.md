@@ -7,7 +7,7 @@
 
 - **Efficient IP allocation** – Avoids wasting IP addresses.
 - **Improved network performance** – Limits broadcast domains.
-- **Better security** – Isolates departments or teams.[[]()]()
+- **Better security** – Isolates departments or teams.
 - **Simpler management** – Easier to troubleshoot and scale.
 
 ---
