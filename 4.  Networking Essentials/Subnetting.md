@@ -3,7 +3,7 @@
 
 ---
 
-**Why Subnet?
+Why Subnet?
 
 - **Efficient IP allocation** – Avoids wasting IP addresses.
 - **Improved network performance** – Limits broadcast domains.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.  Networking Essentials/IP Addresses.md",
+                "file": "4.  Networking Essentials/Subnetting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IP Addresses"
+              "title": "Subnetting"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e554eb3a46e3c29a",
@@ -179,6 +178,7 @@
   },
   "active": "96f8d8a5f653436d",
   "lastOpenFiles": [
+    "4.  Networking Essentials/IP Addresses.md",
     "4.  Networking Essentials/OSI model.md",
     "4.  Networking Essentials/Networking Architecture.md",
     "4.  Networking Essentials/Networking Devices.md",
@@ -193,7 +193,6 @@
     "4.  Networking Essentials/Common Ports and Protocols.md",
     "4.  Networking Essentials/NAT and PAT.md",
     "4.  Networking Essentials/Subnetting.md",
-    "4.  Networking Essentials/IP Addresses.md",
     "Untitled.md",
     "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
     "4.  Networking Essentials",
