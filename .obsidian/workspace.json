@@ -11,14 +11,12 @@
             "id": "96f8d8a5f653436d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "4.  Networking Essentials/Routing and Switching.md",
-                "mode": "source",
-                "source": false
+                "file": "4.  Networking Essentials/Cisco Packet Tracer/Pasted image 20250630195410.png"
               },
-              "icon": "lucide-file",
-              "title": "Routing and Switching"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250630195410"
             }
           }
         ]
@@ -179,6 +177,13 @@
   },
   "active": "96f8d8a5f653436d",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/Pasted image 20250630195410.png",
+    "4.  Networking Essentials/Cisco Packet Tracer/connectiing router and switch.pkt~",
+    "4.  Networking Essentials/Routing and Switching.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/connecting router and switch.txt",
+    "4.  Networking Essentials/Cisco Packet Tracer/New Text Document.txt",
+    "4.  Networking Essentials/Cisco Packet Tracer/connectiing router and switch.pkt",
     "4.  Networking Essentials/Subnetting.md",
     "4.  Networking Essentials/connectiing router and switch.pkt~",
     "4.  Networking Essentials/connectiing router and switch.pkt",
@@ -193,7 +198,6 @@
     "4.  Networking Essentials/Networking Essentials.md",
     "4.  Networking Essentials/Firewall and IDS-IPS.md",
     "4.  Networking Essentials/Firewall and IDS/IPS.md",
-    "4.  Networking Essentials/Routing and Switching.md",
     "4.  Networking Essentials/Firewall and IDS",
     "4.  Networking Essentials/VPN and Remote Connections.md",
     "4.  Networking Essentials/Common Ports and Protocols.md",
@@ -209,11 +213,6 @@
     "3. Introduction to Ethical Hacking/Introduction to Ethical Hacking.md",
     "2. Introduction to Computing/Introduction to Computing.md",
     "2. Introduction to Computing/IAM, MFA & SSO.md",
-    "2. Introduction to Computing/Antivirus, EDR.md",
-    "CyberSecurity",
-    "Pasted image 20250618183239.png",
-    "3. Introduction to Ethical Hacking",
-    "2. Introduction to Computing",
-    "1. Introduction to Cyber security"
+    "Pasted image 20250618183239.png"
   ]
 }
