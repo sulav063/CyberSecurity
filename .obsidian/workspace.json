@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.  Networking Essentials/Subnetting.md",
+                "file": "4.  Networking Essentials/Routing and Switching.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Subnetting"
+              "title": "Routing and Switching"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e554eb3a46e3c29a",
@@ -180,6 +179,7 @@
   },
   "active": "96f8d8a5f653436d",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Subnetting.md",
     "4.  Networking Essentials/connectiing router and switch.pkt~",
     "4.  Networking Essentials/connectiing router and switch.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer",
@@ -198,7 +198,6 @@
     "4.  Networking Essentials/VPN and Remote Connections.md",
     "4.  Networking Essentials/Common Ports and Protocols.md",
     "4.  Networking Essentials/NAT and PAT.md",
-    "4.  Networking Essentials/Subnetting.md",
     "Untitled.md",
     "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
     "4.  Networking Essentials",
@@ -215,7 +214,6 @@
     "Pasted image 20250618183239.png",
     "3. Introduction to Ethical Hacking",
     "2. Introduction to Computing",
-    "1. Introduction to Cyber security",
-    "Cyber Security"
+    "1. Introduction to Cyber security"
   ]
 }
