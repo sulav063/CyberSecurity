@@ -59,21 +59,72 @@ Each /29 subnet provides:
 
 1. Click on the router and go to the CLI tab
 2. Enter the following commands:
+		enable
+		configure terminal
+		
+		interface gigabitEthernet 0/0
+		ip address 192.168.1.6 255.255.255.248
+		no shutdown
+		exit
+		
+		interface gigabitEthernet 0/1
+		ip address 192.168.2.6 255.255.255.248
+		no shutdown
+		exit
+		
+		end
+		write memory
 
-```bash
-enable
-configure terminal
+---
+## 5. Manual PC IP Configuration (Using GUI in Packet Tracer)
 
-interface gigabitEthernet 0/0
-ip address 192.168.1.6 255.255.255.248
-no shutdown
-exit
+For each PC:
 
-interface gigabitEthernet 0/1
-ip address 192.168.2.6 255.255.255.248
-no shutdown
-exit
+1. Click the PC
+2. Go to the **Desktop** tab
+3. Open **IP Configuration**
+4. Manually fill in the following values:
 
-end
-write memory
+---
+
+### Network A (Left Side)
+
+#### PC0
+- IP Address: 192.168.1.1  
+- Subnet Mask: 255.255.255.248  
+- Default Gateway: 192.168.1.6
+
+#### PC1
+- IP Address: 192.168.1.2  
+- Subnet Mask: 255.255.255.248  
+- Default Gateway: 192.168.1.6
+
+#### PC2
+- IP Address: 192.168.1.5  
+- Subnet Mask: 255.255.255.248  
+- Default Gateway: 192.168.1.6
+
+### Network B (Right Side)
+
+#### PC4
+- IP Address: 192.168.2.1  
+- Subnet Mask: 255.255.255.248  
+- Default Gateway: 192.168.2.6
+
+#### PC5
+- IP Address: 192.168.2.2  
+- Subnet Mask: 255.255.255.248  
+- Default Gateway: 192.168.2.6
+
+#### PC6
+- IP Address: 192.168.2.3  
+- Subnet Mask: 255.255.255.248  
+- Default Gateway: 192.168.2.6
+
+#### PC7
+- IP Address: 192.168.2.4  
+- Subnet Mask: 255.255.255.248  
+- Default Gateway: 192.168.2.6
+
+
 
