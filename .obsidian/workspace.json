@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.  Networking Essentials/Routing and Switching.md",
+                "file": "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration (LAN1 & LAN2).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Routing and Switching"
+              "title": "Router DHCP Configuration (LAN1 & LAN2)"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e554eb3a46e3c29a",
@@ -155,8 +154,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -164,8 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,11 +176,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96f8d8a5f653436d",
+  "active": "eeff828bd4637a6f",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.pkt",
+    "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.png",
+    "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration (LAN1 & LAN2).md",
+    "4.  Networking Essentials/Routing and Switching.md",
     "4.  Networking Essentials/Subnetting.md",
     "4.  Networking Essentials/DORA.png",
-    "4.  Networking Essentials/Routing and Switching.md",
     "4.  Networking Essentials/IP Addresses.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch.png",
@@ -216,7 +217,6 @@
     "3. Introduction to Ethical Hacking/What is Hacking.md",
     "3. Introduction to Ethical Hacking/Introduction to Ethical Hacking.md",
     "2. Introduction to Computing/Introduction to Computing.md",
-    "2. Introduction to Computing/IAM, MFA & SSO.md",
     "Pasted image 20250618183239.png"
   ]
 }
