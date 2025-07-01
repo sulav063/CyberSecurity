@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e554eb3a46e3c29a",
@@ -179,15 +180,16 @@
   },
   "active": "96f8d8a5f653436d",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Subnetting.md",
+    "4.  Networking Essentials/DORA.png",
+    "4.  Networking Essentials/Routing and Switching.md",
     "4.  Networking Essentials/IP Addresses.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch.png",
     "4.  Networking Essentials/Cisco Packet Tracer/connectiing router and switch.pkt~",
-    "4.  Networking Essentials/Routing and Switching.md",
     "4.  Networking Essentials/Cisco Packet Tracer/connecting router and switch.txt",
     "4.  Networking Essentials/Cisco Packet Tracer/New Text Document.txt",
     "4.  Networking Essentials/Cisco Packet Tracer/connectiing router and switch.pkt",
-    "4.  Networking Essentials/Subnetting.md",
     "4.  Networking Essentials/connectiing router and switch.pkt~",
     "4.  Networking Essentials/connectiing router and switch.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer",
