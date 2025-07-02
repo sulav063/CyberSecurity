@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.md",
+                "file": "4.  Networking Essentials/Cisco Packet Tracer/Static Routing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Assignment - 3 Department DHCP"
+              "title": "Static Routing"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e554eb3a46e3c29a",
@@ -164,8 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,11 +178,15 @@
   },
   "active": "96f8d8a5f653436d",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Cisco Packet Tracer/staticrouting.pkt~",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/Static Routing.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/staticrouting.png",
+    "Pasted image 20250702190725.png",
     "4.  Networking Essentials/Cisco Packet Tracer/staticrouting.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.png",
-    "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.png",
     "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.md",
     "4.  Networking Essentials/Routing and Switching.md",
@@ -200,7 +202,6 @@
     "4.  Networking Essentials/Cisco Packet Tracer/New Text Document.txt",
     "4.  Networking Essentials/Cisco Packet Tracer/connectiing router and switch.pkt",
     "4.  Networking Essentials/connectiing router and switch.pkt~",
-    "4.  Networking Essentials/connectiing router and switch.pkt",
     "4.  Networking Essentials/OSI model.md",
     "4.  Networking Essentials/Networking Architecture.md",
     "4.  Networking Essentials/Networking Devices.md",
@@ -219,7 +220,6 @@
     "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
     "3. Introduction to Ethical Hacking/Types of Hackers.md",
     "3. Introduction to Ethical Hacking/What is Hacking.md",
-    "3. Introduction to Ethical Hacking/Introduction to Ethical Hacking.md",
     "Pasted image 20250618183239.png"
   ]
 }
