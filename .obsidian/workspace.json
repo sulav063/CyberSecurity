@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e554eb3a46e3c29a",
@@ -163,7 +164,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,6 +180,8 @@
   },
   "active": "96f8d8a5f653436d",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt~",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.png",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.png",
@@ -197,7 +201,6 @@
     "4.  Networking Essentials/connectiing router and switch.pkt~",
     "4.  Networking Essentials/connectiing router and switch.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer",
-    "4.  Networking Essentials/New folder",
     "4.  Networking Essentials/OSI model.md",
     "4.  Networking Essentials/Networking Architecture.md",
     "4.  Networking Essentials/Networking Devices.md",

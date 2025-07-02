@@ -5,6 +5,7 @@
 ---
 ## 1. Subnetting Plan
 
+
 We will use the subnet mask **255.255.255.248 (/29)** for both networks.
 
 Each /29 subnet provides:
