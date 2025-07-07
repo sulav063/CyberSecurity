@@ -34,28 +34,110 @@ Operates at **Layer 2 – Data Link Layer**.
 ## Routing
 
 ### Definition  
-Routing is the process of directing data **between different networks** using IP addresses.
+Routing is the process of directing data **between different networks** using **IP addresses**. It ensures that data packets take the best path to reach their destination.
+
+---
 
 ### OSI Layer  
-Operates at **Layer 3 – Network Layer**.
+Routing operates at **Layer 3 – Network Layer** of the OSI model.
 
-### How Routing Works  
-- Routers connect different networks (e.g., LAN to WAN/internet).  
-- They inspect the **IP header** of each packet.  
-- Use a **routing table** to determine the best next hop.  
-- Forward packets toward their destination network.
+---
+
+### Key Concepts
+
+- **Router**:  
+  A device that connects multiple networks and determines the best path for data to travel between them.  
+  It examines the **IP header** and makes forwarding decisions based on the **routing table**.
+
+- **Routing Table**:  
+  A data table stored in a router or Layer 3 device that lists routes to particular network destinations.  
+  It contains:
+  - Destination network
+  - Subnet mask
+  - Next hop IP
+  - Interface
+  - Metric/cost
+
+- **Hop**:  
+  A **hop** refers to the passage of a data packet from one network device (router) to another.  
+  Each router a packet passes through counts as one hop.
+
+- **Route**:  
+  A **route** defines a path from the source network to the destination network.  
+  Routes are stored in the routing table and can be manually or dynamically created.
+
+---
 
 ### Types of Routing
 
-| Type            | Description                                                  |
-|-----------------|--------------------------------------------------------------|
-| **Static**      | Manually configured routes. Simple, but not flexible.        |
-| **Dynamic**     | Routes are updated automatically using routing protocols.    |
+| Type            | Description                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| **Static Routing**  | Manually configured routes. Simple, secure, but not scalable.              |
+| **Dynamic Routing** | Automatically updated by routers using routing protocols. Adaptable.      |
+| **Default Routing** | A static route used when no other route is found (often to the internet). |
 
-### Common Routing Protocols  
-- **RIP** – Hop count-based; simple but limited.  
-- **OSPF** – Link-state; efficient and faster.  
-- **BGP** – Used between ISPs and large networks (internet backbone).
+---
+
+### Dynamic Routing Protocols
+
+Dynamic routing protocols help routers discover and update routes automatically. They fall into three main categories:
+
+#### 1. **Distance Vector Protocols**
+- Share full routing tables periodically with neighbors.
+- Choose the best path based on **hop count**.
+- Slower convergence and risk of routing loops.
+- **Example**: RIP (Routing Information Protocol)
+
+#### 2. **Link State Protocols**
+- Routers exchange **state of their links (interfaces)**.
+- Builds a full map of the network.
+- Fast convergence and more accurate.
+- **Example**: OSPF (Open Shortest Path First), IS-IS
+
+#### 3. **Path Vector Protocols**
+- Designed for **interdomain routing** (e.g., Internet).
+- Maintains the path information that gets updated dynamically.
+- Used in very large networks.
+- **Example**: BGP (Border Gateway Protocol)
+
+---
+
+### Workflow of Routing (Simplified)
+
+1. **Packet Creation**  
+   The source device creates a packet with destination IP.
+
+2. **Check Network**  
+   The source checks if the destination is in the same network.  
+   If not, it sends the packet to its **default gateway** (router).
+
+3. **Routing Table Lookup**  
+   The router receives the packet and checks its **routing table**.
+
+4. **Select Next Hop**  
+   Based on the destination IP, it selects the best route and forwards the packet to the **next hop**.
+
+5. **Repeat**  
+   This process repeats across routers until the packet reaches the destination.
+
+6. **Delivery**  
+   The destination device receives the packet and responds.
+
+---
+
+### Example Scenario
+
+- Device A (192.168.1.10) wants to send data to Server B (10.0.0.5).
+- Device A sends the packet to its router (default gateway).
+- The router examines its routing table:
+  - If it has a route to 10.0.0.0/8 → forwards to the next hop.
+  - If no specific route exists → uses a **default route** (0.0.0.0/0).
+- The packet is passed through routers until it reaches 10.0.0.5.
+
+---
+
+Let me know if you'd like this with a visual diagram, example routing table, or real Cisco/router commands for practical labs!
+
 
 ---
 
