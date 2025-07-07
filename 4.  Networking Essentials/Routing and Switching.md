@@ -136,8 +136,6 @@ Dynamic routing protocols help routers discover and update routes automatically.
 
 ---
 
-Let me know if you'd like this with a visual diagram, example routing table, or rea
-
 ## DHCP (Dynamic Host Configuration Protocol)
 
 ### Definition  
