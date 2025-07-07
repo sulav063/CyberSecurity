@@ -35,13 +35,8 @@ Operates at **Layer 2 – Data Link Layer**.
 
 ### Definition  
 Routing is the process of directing data **between different networks** using **IP addresses**. It ensures that data packets take the best path to reach their destination.
-
----
-
 ### OSI Layer  
 Routing operates at **Layer 3 – Network Layer** of the OSI model.
-
----
 
 ### Key Concepts
 
@@ -66,8 +61,6 @@ Routing operates at **Layer 3 – Network Layer** of the OSI model.
   A **route** defines a path from the source network to the destination network.  
   Routes are stored in the routing table and can be manually or dynamically created.
 
----
-
 ### Types of Routing
 
 | Type            | Description                                                                 |
@@ -76,7 +69,6 @@ Routing operates at **Layer 3 – Network Layer** of the OSI model.
 | **Dynamic Routing** | Automatically updated by routers using routing protocols. Adaptable.      |
 | **Default Routing** | A static route used when no other route is found (often to the internet). |
 
----
 
 ### Dynamic Routing Protocols
 
@@ -100,8 +92,6 @@ Dynamic routing protocols help routers discover and update routes automatically.
 - Used in very large networks.
 - **Example**: BGP (Border Gateway Protocol)
 
----
-
 ### Workflow of Routing (Simplified)
 
 1. **Packet Creation**  
@@ -122,8 +112,6 @@ Dynamic routing protocols help routers discover and update routes automatically.
 
 6. **Delivery**  
    The destination device receives the packet and responds.
-
----
 
 ### Example Scenario
 
