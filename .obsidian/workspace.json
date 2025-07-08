@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.  Networking Essentials/NAT and PAT.md",
+                "file": "4.  Networking Essentials/Cisco Packet Tracer/NAT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NAT and PAT"
+              "title": "NAT"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e554eb3a46e3c29a",
@@ -180,11 +179,13 @@
   },
   "active": "6cb4c246fdcfc3ff",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Cisco Packet Tracer/NAT.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/NAT.png",
     "4.  Networking Essentials/Cisco Packet Tracer/Home Router.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/HomeRouter.png",
     "4.  Networking Essentials/NAT and PAT.md",
     "4.  Networking Essentials/Cisco Packet Tracer/laptop.png",
     "4.  Networking Essentials/Cisco Packet Tracer/wirelessrouter0.png",
-    "4.  Networking Essentials/Cisco Packet Tracer/HomeRouter.png",
     "4.  Networking Essentials/VPN and Remote Connections.md",
     "4.  Networking Essentials/Routing and Switching.md",
     "4.  Networking Essentials/Cisco Packet Tracer/HomeRouter.pkt",
@@ -222,8 +223,6 @@
     "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
     "3. Introduction to Ethical Hacking/The Ethical Hacking Methodology.md",
     "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
-    "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
-    "3. Introduction to Ethical Hacking/Types of Hackers.md",
-    "Pasted image 20250618183239.png"
+    "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md"
   ]
 }
