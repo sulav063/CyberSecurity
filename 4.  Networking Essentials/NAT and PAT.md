@@ -13,24 +13,84 @@
 
 ## Types of NAT
 
-| Type             | Description                                                              |
-|------------------|---------------------------------------------------------------------------|
-| **Static NAT**   | One-to-one mapping between private and public IPs. Used for servers.      |
-| **Dynamic NAT**  | Maps private IPs to a pool of public IPs. Limited scalability.            |
-| **PAT**          | Many-to-one mapping using port numbers. Most commonly used.               |
+# Types of NAT  
+*Module 4 – Networking Essentials > Routing and Subnetting*
 
----
+**Network Address Translation (NAT)** comes in different types, depending on how internal (private) IP addresses are mapped to external (public) IP addresses.
 
-## PAT (Port Address Translation)
+## 1. Static NAT
 
 ### Definition  
-**PAT**, also known as **NAT Overload**, is a type of NAT that maps **multiple private IP addresses** to a **single public IP address** using different **port numbers**.
+Maps **one private IP address** to **one public IP address**.
+
+### Use Case  
+Used when a device (e.g., internal web or mail server) must be **consistently accessible** from the outside world.
 
 ### Example  
-- Three devices (192.168.1.10, 192.168.1.11, 192.168.1.12) access the internet via 1 public IP (e.g., 49.45.200.15).  
-- PAT uses port numbers to track individual connections:
-  - 192.168.1.10:1234 → 49.45.200.15:5001  
-  - 192.168.1.11:1235 → 49.45.200.15:5002
+- Private IP: `192.168.1.10`  
+- Public IP: `49.45.200.50`  
+- Mapping is always fixed.
+
+### Pros  
+- Simple to configure.  
+- Useful for hosting services inside a private network.
+
+### Cons  
+- Requires one public IP for each private IP — **not scalable**.
+
+## 2. Dynamic NAT
+
+### Definition  
+Maps **private IP addresses** to **a pool of public IP addresses** dynamically on a first-come, first-served basis.
+
+### Use Case  
+When a limited number of public IPs are shared among many private hosts that don't all need to access the internet at once.
+
+### Example  
+- Private IPs: `192.168.1.0/24`  
+- Public IP Pool: `49.45.200.50 – 49.45.200.60`  
+- Any 11 private devices can be translated at a time.
+
+### Pros  
+- Better IP conservation than Static NAT.  
+- Automatically assigns available public IPs from a pool.
+
+### Cons  
+- If the pool is exhausted, **new connections are blocked**.  
+- No consistent mapping — can cause issues for services expecting a fixed IP.
+
+## 3. PAT (Port Address Translation) – Also Known as NAT Overload
+
+### Definition  
+Maps **many private IP addresses** to **a single public IP address**, using **different port numbers** to track sessions.
+
+### Use Case  
+Most commonly used in home, office, and enterprise networks for internet access.
+
+### Example  
+| Private IP         | Public IP and Port        |
+|--------------------|---------------------------|
+| 192.168.1.10:5000  | 49.45.200.50:30001         |
+| 192.168.1.11:5001  | 49.45.200.50:30002         |
+
+### Pros  
+- Extremely **scalable**.  
+- Conserves public IPs efficiently.  
+- Most widely used form of NAT.
+
+### Cons  
+- Adds some complexity (port tracking).  
+- May interfere with some protocols that embed IP or port info in data.
+
+## Comparison Table
+
+| Feature              | Static NAT                   | Dynamic NAT                    | PAT (NAT Overload)               |
+|----------------------|------------------------------|--------------------------------|----------------------------------|
+| Mapping Type         | One-to-One                   | Many-to-Many (from a pool)     | Many-to-One (with port tracking)|
+| Public IPs Needed    | One per device               | Pool of public IPs             | One or few                       |
+| Scalability          | Low                          | Medium                         | High                             |
+| Used For             | Hosting internal services    | Temporary external access      | Internet access from LAN         |
+| Consistency          | Always same public IP        | Varies                         | Varies (same IP, diff. ports)    |
 
 ---
 
