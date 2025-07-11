@@ -125,3 +125,102 @@ Each IP address supports **65,536 ports** for communication, used to identify se
 
 ---
 
+## What is DNS?
+
+**DNS (Domain Name System)** is a system that translates **human-readable domain names** (like `example.com`) into **IP addresses** (like `93.184.216.34`), which computers use to identify each other on networks.
+
+It acts like the **"phonebook of the internet"** – allowing users to access websites using names instead of numeric IP addresses.
+
+---
+
+## Why DNS is Important
+
+- Users prefer names (`google.com`) over numbers (`142.250.190.78`).
+- DNS enables scalability by allowing IP addresses to change while keeping domain names constant.
+- Without DNS, you'd have to remember IP addresses for every website or service.
+
+---
+
+## How DNS Works
+
+1. **User enters a domain name** in the browser (e.g., `openai.com`).
+2. The system checks **local DNS cache** to see if it already knows the IP.
+3. If not found, a **recursive DNS query** is sent to a DNS resolver.
+4. The resolver communicates with:
+   - **Root DNS Server** – identifies the TLD server.
+   - **TLD Server** – identifies the authoritative server for the domain.
+   - **Authoritative DNS Server** – provides the IP address for the domain.
+5. The IP address is returned to the client.
+6. The browser connects to the server using the returned IP.
+
+---
+
+## DNS Query Types
+
+| Query Type | Description                                  |
+|------------|----------------------------------------------|
+| **A**      | Maps a domain to an IPv4 address             |
+| **AAAA**   | Maps a domain to an IPv6 address             |
+| **MX**     | Mail exchange record (email server)          |
+| **CNAME**  | Canonical name (alias to another domain)     |
+| **NS**     | Identifies authoritative name servers        |
+| **PTR**    | Reverse lookup – IP to domain                |
+| **TXT**    | Stores text information (e.g., SPF records)  |
+| **SRV**    | Specifies services like SIP or LDAP          |
+
+---
+
+## DNS Components
+
+| Component         | Role                                         |
+|------------------|----------------------------------------------|
+| **DNS Client**   | Sends DNS queries (usually part of the OS)   |
+| **Resolver**     | Receives queries and initiates lookup chain  |
+| **Root Server**  | Starting point of DNS hierarchy               |
+| **TLD Server**   | Handles extensions like `.com`, `.org`, etc. |
+| **Authoritative Server** | Holds actual domain-IP mapping       |
+
+---
+
+## What is TLD (Top-Level Domain)
+
+- A **Top-Level Domain (TLD)** is the **last segment** of a domain name, located after the last dot.
+- Examples: `.com`, `.org`, `.edu`, `.gov`, `.net`, `.np`, `.uk`
+
+### Types of TLDs:
+
+| Type                  | Example          | Description                                   |
+|-----------------------|------------------|-----------------------------------------------|
+| **Generic TLD (gTLD)**| `.com`, `.org`   | Most common TLDs, open to general use         |
+| **Sponsored TLD (sTLD)**| `.edu`, `.gov` | Restricted to specific entities (e.g., education, government) |
+| **Country Code TLD (ccTLD)**| `.np`, `.uk` | Assigned to countries or territories          |
+| **Infrastructure TLD**| `.arpa`          | Reserved for internet infrastructure          |
+| **New gTLDs**         | `.tech`, `.xyz`  | Recently introduced for broader use           |
+
+---
+
+## DNS Ports and Protocols
+
+| Port | Protocol | Use Case               |
+|------|----------|------------------------|
+| 53   | UDP      | Standard DNS lookups   |
+| 53   | TCP      | Zone transfers, large responses |
+
+---
+
+## DNS Caching
+
+- Speeds up queries by **storing previous lookups**.
+- Cached at browser, OS, and DNS resolver level.
+- Each record has a **TTL (Time To Live)** value that defines how long it should be cached.
+
+---
+
+## DNS in Ethical Hacking
+
+- DNS is often a **reconnaissance target** during **footprinting**.
+- Useful tools: `nslookup`, `dig`, `host`
+- Common attack techniques:
+  - **DNS Spoofing / Poisoning**
+  - **DNS Tunneling**
+  - **DNS Zone Transfer** (misconfigured DNS servers)
