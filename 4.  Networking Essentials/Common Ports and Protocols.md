@@ -122,3 +122,6 @@ Each IP address supports **65,536 ports** for communication, used to identify se
   - Disable or block unused ports via firewall
   - Monitor traffic with IDS/IPS tools
   - Enforce encryption (e.g., HTTPS, SFTP)
+
+---
+

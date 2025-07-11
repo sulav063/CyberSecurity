@@ -154,8 +154,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -163,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,10 +179,10 @@
   },
   "active": "6cb4c246fdcfc3ff",
   "lastOpenFiles": [
-    "4.  Networking Essentials/Routing and Switching.md",
-    "4.  Networking Essentials/Brief history of Networking.md",
     "4.  Networking Essentials/Networking Essentials.md",
     "4.  Networking Essentials/Common Ports and Protocols.md",
+    "4.  Networking Essentials/Routing and Switching.md",
+    "4.  Networking Essentials/Brief history of Networking.md",
     "4.  Networking Essentials/OSI model.md",
     "4.  Networking Essentials/Networking Architecture.md",
     "4.  Networking Essentials/VPN and Remote Connections.md",
