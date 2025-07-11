@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4.  Networking Essentials/Firewall and IDS-IPS.md",
+                "file": "4.  Networking Essentials/VPN and Remote Connections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Firewall and IDS-IPS"
+              "title": "VPN and Remote Connections"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e554eb3a46e3c29a",
@@ -155,8 +154,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -164,8 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,10 +178,17 @@
   },
   "active": "d787601596b00f06",
   "lastOpenFiles": [
-    "4.  Networking Essentials/Common Ports and Protocols.md",
+    "4.  Networking Essentials/VPN Vs Proxy.png",
     "4.  Networking Essentials/Firewall and IDS-IPS.md",
-    "4.  Networking Essentials/FW vs IDS vs IPS.png",
     "4.  Networking Essentials/VPN and Remote Connections.md",
+    "4.  Networking Essentials/FW vs IDS vs IPS.png",
+    "Pasted image 20250711185536.png",
+    "4.  Networking Essentials/Types of VPN.png",
+    "Pasted image 20250711185740.png",
+    "4.  Networking Essentials/VPN.png",
+    "Pasted image 20250711184947.png",
+    "4.  Networking Essentials/VPN.png",
+    "4.  Networking Essentials/Common Ports and Protocols.md",
     "4.  Networking Essentials/Types of Firewall.png",
     "4.  Networking Essentials/Firewall.png",
     "4.  Networking Essentials/Networking Essentials.md",
@@ -197,19 +202,13 @@
     "4.  Networking Essentials/LAN, MAN & WAN.md",
     "4.  Networking Essentials/DORA.png",
     "4.  Networking Essentials/Cisco Packet Tracer/NAT.md",
-    "4.  Networking Essentials/Cisco Packet Tracer/NAT.png",
     "4.  Networking Essentials/Cisco Packet Tracer/Home Router.md",
-    "4.  Networking Essentials/Cisco Packet Tracer/HomeRouter.png",
-    "4.  Networking Essentials/Cisco Packet Tracer/laptop.png",
-    "4.  Networking Essentials/Cisco Packet Tracer/wirelessrouter0.png",
     "4.  Networking Essentials/Cisco Packet Tracer/HomeRouter.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Home Router.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Home Router.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Static Routing.md",
     "4.  Networking Essentials/Cisco Packet Tracer/staticrouting.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.md",
-    "4.  Networking Essentials/Cisco Packet Tracer/staticrouting.png",
-    "Pasted image 20250702190725.png",
     "4.  Networking Essentials/Cisco Packet Tracer/staticrouting.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt",
