@@ -65,6 +65,8 @@ Linux is a **modular, layered operating system** that interacts with hardware an
 ---
 ## Linux Directory Structure
 
+![[Linux Directory Structure.png]]
+
 Linux follows a **hierarchical directory structure**, with the **root (`/`) directory** at the top. Every file or directory stems from `/`.
 
 ### Standard Directories:
