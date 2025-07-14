@@ -11,10 +11,14 @@
             "id": "e6a46981a247cff1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Linux Essentials/Linux Architecture & Directory Structure.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Linux Architecture & Directory Structure"
             }
           }
         ]
@@ -175,6 +179,10 @@
   },
   "active": "e6a46981a247cff1",
   "lastOpenFiles": [
+    "Linux Essentials/Linux Architcture.png",
+    "Linux Essentials/History of Linux.md",
+    "Linux Essentials/Linux Architecture & Directory Structure.md",
+    "Linux Essentials",
     "4.  Networking Essentials/VPN and Remote Connections.md",
     "5. Lab Setup",
     "4.  Networking Essentials/VPN Vs Proxy.png",
@@ -188,7 +196,6 @@
     "4.  Networking Essentials/VPN.png",
     "4.  Networking Essentials/Common Ports and Protocols.md",
     "4.  Networking Essentials/Types of Firewall.png",
-    "4.  Networking Essentials/Firewall.png",
     "4.  Networking Essentials/Networking Essentials.md",
     "4.  Networking Essentials/Routing and Switching.md",
     "4.  Networking Essentials/Brief history of Networking.md",
@@ -211,14 +218,11 @@
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.pkt~",
-    "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.pkt",
     "4.  Networking Essentials/Subnetting.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Firewall and IDS-IPS.md",
     "4.  Networking Essentials/Firewall and IDS/IPS.md",
     "Untitled.md",
-    "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
-    "3. Introduction to Ethical Hacking/The Ethical Hacking Methodology.md",
-    "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md"
+    "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md"
   ]
 }
