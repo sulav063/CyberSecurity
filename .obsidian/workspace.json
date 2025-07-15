@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "37311b745fa352b2",
+        "id": "6cf4c98a45c283ed",
         "type": "tabs",
         "children": [
           {
-            "id": "e6a46981a247cff1",
+            "id": "10ade61607459f05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux Essentials/Linux Architecture & Directory Structure.md",
+                "file": "6. Linux Essentials/Basic Linux Commands/Basic Linux Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Architecture & Directory Structure"
+              "title": "Basic Linux Commands"
             }
           }
         ]
@@ -176,23 +176,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e6a46981a247cff1",
+  "active": "10ade61607459f05",
   "lastOpenFiles": [
-    "Linux Essentials/Linux Directory Structure.png",
-    "Linux Essentials/Linux Architecture & Directory Structure.md",
-    "Linux Essentials/Linux Architcture.png",
-    "Linux Essentials/History of Linux.md",
-    "Linux Essentials",
+    "6. Linux Essentials/Basic Linux Commands/whoami.png",
+    "6. Linux Essentials/Basic Linux Commands/vi2.png",
+    "6. Linux Essentials/Basic Linux Commands/vi1.png",
+    "6. Linux Essentials/Basic Linux Commands/touch.png",
+    "6. Linux Essentials/Basic Linux Commands/rmdir.png",
+    "6. Linux Essentials/Basic Linux Commands/rm.png",
+    "6. Linux Essentials/Basic Linux Commands/rm -rf.png",
+    "6. Linux Essentials/Basic Linux Commands/pwd.png",
+    "6. Linux Essentials/Basic Linux Commands/nano2.png",
+    "6. Linux Essentials/Basic Linux Commands/nano1.png",
+    "6. Linux Essentials/Basic Linux Commands/mv.png",
+    "6. Linux Essentials/Basic Linux Commands/Basic Linux Commands.md",
+    "6. Linux Essentials/Basic Linux Commands",
+    "6. Linux Essentials/Linux Architecture & Directory Structure.md",
+    "6. Linux Essentials/History of Linux.md",
+    "6. Linux Essentials",
     "4.  Networking Essentials/VPN and Remote Connections.md",
     "5. Lab Setup",
-    "4.  Networking Essentials/VPN Vs Proxy.png",
     "4.  Networking Essentials/Firewall and IDS-IPS.md",
-    "4.  Networking Essentials/FW vs IDS vs IPS.png",
-    "Pasted image 20250711185536.png",
-    "4.  Networking Essentials/Types of VPN.png",
-    "Pasted image 20250711185740.png",
-    "4.  Networking Essentials/VPN.png",
-    "Pasted image 20250711184947.png",
     "4.  Networking Essentials/Common Ports and Protocols.md",
     "4.  Networking Essentials/Networking Essentials.md",
     "4.  Networking Essentials/Routing and Switching.md",
@@ -215,12 +219,10 @@
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.md",
-    "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.pkt~",
     "4.  Networking Essentials/Subnetting.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Firewall and IDS-IPS.md",
     "4.  Networking Essentials/Firewall and IDS/IPS.md",
-    "Untitled.md",
-    "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md"
+    "Untitled.md"
   ]
 }
