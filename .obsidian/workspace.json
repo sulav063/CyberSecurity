@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e5529dfad648e1ac",
+        "id": "855b986e1ae95d9b",
         "type": "tabs",
         "children": [
           {
-            "id": "58ca0c6fa86765ec",
+            "id": "db1a7a24adafc979",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4.  Networking Essentials/Cisco Packet Tracer/NAT/NAT.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "NAT"
+              "title": "New tab"
             }
           }
         ]
@@ -177,8 +173,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "58ca0c6fa86765ec",
+  "active": "db1a7a24adafc979",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/NAT Configuration.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/NAT.pkt~",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/NAT.pkt",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/NAT.png",
+    "NAT.png",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/2 Switches and 1 Router.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/NAT/NAT.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/2 Switches 1 Router.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/DHCP.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/staticrouting.png",
@@ -191,7 +194,6 @@
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/DHCP.png",
     "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration/Router DHCP Configuration.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/DHCP.pkt",
-    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/2 Switches and 1 Router.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/2 switch 1 router.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/2 switch 1 router.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/2 switch 1 router.png",
@@ -205,14 +207,10 @@
     "6. Linux Essentials/Basic Linux Commands/vi2.png",
     "6. Linux Essentials/Basic Linux Commands/vi1.png",
     "6. Linux Essentials/Basic Linux Commands/touch.png",
-    "6. Linux Essentials/Basic Linux Commands/rmdir.png",
-    "6. Linux Essentials/Basic Linux Commands/rm.png",
     "6. Linux Essentials/Basic Linux Commands",
     "6. Linux Essentials/Linux Architecture & Directory Structure.md",
     "6. Linux Essentials/History of Linux.md",
-    "6. Linux Essentials",
     "4.  Networking Essentials/VPN and Remote Connections.md",
-    "5. Lab Setup",
     "4.  Networking Essentials/Firewall and IDS-IPS.md",
     "4.  Networking Essentials/Common Ports and Protocols.md",
     "4.  Networking Essentials/Networking Essentials.md",
@@ -221,9 +219,6 @@
     "4.  Networking Essentials/OSI model.md",
     "4.  Networking Essentials/Networking Architecture.md",
     "4.  Networking Essentials/NAT and PAT.md",
-    "4.  Networking Essentials/IP Addresses.md",
-    "4.  Networking Essentials/Networking Devices.md",
-    "4.  Networking Essentials/LAN, MAN & WAN.md",
-    "4.  Networking Essentials/Cisco Packet Tracer/NAT.md"
+    "4.  Networking Essentials/IP Addresses.md"
   ]
 }
