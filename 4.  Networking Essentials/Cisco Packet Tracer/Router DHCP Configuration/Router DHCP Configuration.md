@@ -23,7 +23,7 @@
 
 ---
 
-## Step 2: Paste into Router CLI
+## Step 2: Router CLI
 enable  
 configure terminal
 
