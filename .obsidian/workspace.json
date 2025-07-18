@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6. Linux Essentials/Basic Linux Commands/Basic Linux Commands.md",
+                "file": "4.  Networking Essentials/Cisco Packet Tracer/Home Router/Home Router.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Linux Commands"
+              "title": "Home Router"
             }
           }
         ]
@@ -163,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,6 +179,12 @@
   },
   "active": "10ade61607459f05",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Cisco Packet Tracer/Static Routing/Static Routing.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration/Router DHCP Configuration.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/Home Router/Home Router.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP/Assignment - 3 Department DHCP.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch/Connecting Router and Switch.md",
+    "6. Linux Essentials/Basic Linux Commands/Basic Linux Commands.md",
     "6. Linux Essentials/Basic Linux Commands/whoami.png",
     "6. Linux Essentials/Basic Linux Commands/vi2.png",
     "6. Linux Essentials/Basic Linux Commands/vi1.png",
@@ -188,8 +195,6 @@
     "6. Linux Essentials/Basic Linux Commands/pwd.png",
     "6. Linux Essentials/Basic Linux Commands/nano2.png",
     "6. Linux Essentials/Basic Linux Commands/nano1.png",
-    "6. Linux Essentials/Basic Linux Commands/mv.png",
-    "6. Linux Essentials/Basic Linux Commands/Basic Linux Commands.md",
     "6. Linux Essentials/Basic Linux Commands",
     "6. Linux Essentials/Linux Architecture & Directory Structure.md",
     "6. Linux Essentials/History of Linux.md",
@@ -219,10 +224,6 @@
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Router DHCP Configuration.md",
-    "4.  Networking Essentials/Subnetting.md",
-    "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch.md",
-    "4.  Networking Essentials/Cisco Packet Tracer/Firewall and IDS-IPS.md",
-    "4.  Networking Essentials/Firewall and IDS/IPS.md",
-    "Untitled.md"
+    "4.  Networking Essentials/Subnetting.md"
   ]
 }
