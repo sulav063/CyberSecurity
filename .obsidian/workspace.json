@@ -11,10 +11,14 @@
             "id": "db1a7a24adafc979",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "SOHO"
             }
           }
         ]
@@ -159,8 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,8 +176,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "db1a7a24adafc979",
+  "active": "eeff828bd4637a6f",
   "lastOpenFiles": [
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.pkt~",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.pkt",
+    "SOHO.png",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.png",
+    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.md",
+    "4.  Networking Essentials/Cisco Packet Tracer/Home Router/Home Router.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/NAT Configuration.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/NAT.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/NAT.pkt",
@@ -200,14 +209,10 @@
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch/Connecting Router and Switch.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch/Connecting Router and Switch.png",
-    "4.  Networking Essentials/Cisco Packet Tracer/Home Router/Home Router.md",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP/Assignment - 3 Department DHCP.md",
     "6. Linux Essentials/Basic Linux Commands/Basic Linux Commands.md",
     "6. Linux Essentials/Basic Linux Commands/whoami.png",
     "6. Linux Essentials/Basic Linux Commands/vi2.png",
-    "6. Linux Essentials/Basic Linux Commands/vi1.png",
-    "6. Linux Essentials/Basic Linux Commands/touch.png",
-    "6. Linux Essentials/Basic Linux Commands",
     "6. Linux Essentials/Linux Architecture & Directory Structure.md",
     "6. Linux Essentials/History of Linux.md",
     "4.  Networking Essentials/VPN and Remote Connections.md",
@@ -218,7 +223,6 @@
     "4.  Networking Essentials/Brief history of Networking.md",
     "4.  Networking Essentials/OSI model.md",
     "4.  Networking Essentials/Networking Architecture.md",
-    "4.  Networking Essentials/NAT and PAT.md",
-    "4.  Networking Essentials/IP Addresses.md"
+    "4.  Networking Essentials/NAT and PAT.md"
   ]
 }
