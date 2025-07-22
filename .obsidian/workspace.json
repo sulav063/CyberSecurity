@@ -163,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,8 +177,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eeff828bd4637a6f",
+  "active": "db1a7a24adafc979",
   "lastOpenFiles": [
+    "6. Linux Essentials/Linux_Presentation.pptx",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.pkt",
     "SOHO.png",
@@ -207,7 +209,6 @@
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/2 switch 1 router.pkt",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/2 switch 1 router.png",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch/Connecting Router and Switch.md",
-    "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets",
     "4.  Networking Essentials/Cisco Packet Tracer/Connecting Router and Switch/Connecting Router and Switch.png",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP/Assignment - 3 Department DHCP.md",
     "6. Linux Essentials/Basic Linux Commands/Basic Linux Commands.md",
