@@ -1,5 +1,5 @@
 ### Basic Navigation
-```
+```bash
 pwd                 # Show current directory
 cd                  # Go to home directory
 cd /path/to/dir     # Go to specific directory
@@ -13,7 +13,7 @@ dirs -v             # List directory stack with numbering
 
 ---
 ### Listing Files and Info
-```
+```bash
 ls                  # List contents
 ls -a               # Include hidden files
 ls -l               # Long listing with details
@@ -26,7 +26,7 @@ ls -R               # Recursively list directory contents
 
 ---
 ### Creating, Copying, Moving
-```
+```bash
 touch file.txt      # Create empty file
 mkdir newdir        # Create directory
 mkdir -p dir/subdir # Create directory and parent directories as needed
@@ -40,7 +40,7 @@ rsync -av file.txt /dir/ # Synchronize files with advanced options
 
 ---
 ### Deleting and Inspecting
-```
+```bash
 rm file.txt         # Delete file
 rm -r dir           # Delete directory recursively
 rmdir dir           # Remove empty directory

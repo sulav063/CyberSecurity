@@ -1,5 +1,5 @@
 ### Package Management
-```
+```bash
 sudo apt update          # Refresh package lists
 sudo apt upgrade -y      # Upgrade installed packages
 sudo apt full-upgrade -y # Upgrade with dependency handling
@@ -13,7 +13,7 @@ dpkg -l                  # List installed packages
 
 ****
 ### Service Management
-```
+```bash
 systemctl start service # Start a service
 systemctl stop service  # Stop a service
 systemctl restart service # Restart a service
@@ -24,7 +24,7 @@ service service_name start # Alternative service start
 ****
 
 ### Process Management
-```
+```bash
 ps aux              # List all running processes
 top                 # Display real-time process info
 htop                # Interactive process viewer
