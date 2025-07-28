@@ -117,7 +117,7 @@ num1=9
 num2=5
 
 modulo=$((num1 % num2))
-echo "Modulus of \$num1 and \$num2 is \$modulo"
+echo "Modulus of $num1 and $num2 is $modulo"
 
 # Comparison Operators
 if [ "$num1" -eq "$num2" ]; then
