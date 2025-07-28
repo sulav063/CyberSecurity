@@ -20,16 +20,6 @@
               "icon": "lucide-file",
               "title": "Basic Linux Commands"
             }
-          },
-          {
-            "id": "2a97dac2d403325b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
           }
         ]
       }
