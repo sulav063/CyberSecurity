@@ -1,4 +1,3 @@
-
 ## Shebang: `#!/bin/bash`
 
 ```bash
