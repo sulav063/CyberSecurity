@@ -1,4 +1,4 @@
-### Viewing Processes
+dont ne### Viewing Processes
 
 ```bash
 ps                         # Show current user's processes
