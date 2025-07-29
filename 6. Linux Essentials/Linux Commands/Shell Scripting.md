@@ -28,6 +28,15 @@ chmod +x script_name
 
 - Executes the script in the current directory.
 ---
+You can create and edit these scripts using:
+
+```bash
+mousepad script_name &
+```
+
+- This opens the script in a GUI text editor (`mousepad`) in the background so your terminal stays free.
+Use `Ctrl + C` to exit a running command or cancel an operation in terminal.
+---
 
 ## Script 1 – Basic Echo and Variables
 
@@ -127,13 +136,75 @@ fi
 ```
 
 ---
-
-You can create and edit these scripts using:
-
+## Script 6 - Greater, Equal, or Smaller
 ```bash
-mousepad script_name &
+#!/bin/bash
+
+read -p "Enter a number: " num
+
+# Check if the number is greater than, equal to, or less than 10
+if [ "$num" -gt 10 ]; then
+    echo "The number is greater than 10"
+elif [ "$num" -eq 10 ]; then
+    echo "It is exactly 10"
+else
+    echo "It is less than 10"
+fi
 ```
 
-- This opens the script in a GUI text editor (`mousepad`) in the background so your terminal stays free.
-Use `Ctrl + C` to exit a running command or cancel an operation in terminal.
+---
+## Script 7 - Odd or Even
+```bash
+#!/bin/bash
+
+read -p "Enter a number: " num
+
+# Check if the number is even or odd
+if (( num % 2 == 0 )); then
+    echo "The number is even"
+else
+    echo "The number is odd"
+fi
+```
+
+---
+## Script 8 - Simple Calculator (Using if-else)
+```bash
+#!/bin/bash
+
+echo "Simple Bash Calculator using if-else"
+echo "------------------------------------"
+
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+
+echo "Choose operation: +  -  *  /"
+read -p "Enter operator: " op
+
+if [ "$op" = "+" ]; then
+    result=$((num1 + num2))
+    echo "Result: $num1 + $num2 = $result"
+
+elif [ "$op" = "-" ]; then
+    result=$((num1 - num2))
+    echo "Result: $num1 - $num2 = $result"
+
+elif [ "$op" = "*" ]; then
+    result=$((num1 * num2))
+    echo "Result: $num1 * $num2 = $result"
+
+elif [ "$op" = "/" ]; then
+    if [ "$num2" -ne 0 ]; then
+        # Using bc for floating point division with 2 decimal places
+        result=$(echo "scale=2; $num1 / $num2" | bc)
+        echo "Result: $num1 / $num2 = $result"
+    else
+        echo "Error: Cannot divide by zero"
+    fi
+
+else
+    echo "Invalid operator. Please use +, -, * or /"
+fi
+
+```
 ---
