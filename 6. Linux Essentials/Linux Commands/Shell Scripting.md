@@ -208,3 +208,115 @@ fi
 
 ```
 ---
+---
+
+## title: System Commands in Shell Scripting  
+created: 2025-07-30  
+tags: [shell, scripting, linux, commands, practical]
+
+## 🖥️ What Are System Commands in Shell Scripting?
+
+System commands are built-in or external utilities provided by the Linux/Unix operating system. These commands allow you to manage system-level tasks like checking the user, hostname, OS, and network configuration.
+
+---
+
+## ✅ Basic System Info Script
+
+```bash
+#!/bin/bash
+# System Commands
+
+touch ./data.txt
+
+uname=$(whoami)
+sysname=$(hostname)
+netinfo=$(ifconfig)
+osinfo=$(uname -a)
+
+echo "Username: $uname" >> data.txt
+echo "Username is collected..."
+
+echo "Hostname: $sysname" >> data.txt
+echo "Hostname is collected..."
+
+echo "Network info: $netinfo" >> data.txt
+echo "Network information is collected..."
+
+echo "OS info: $osinfo" >> data.txt
+echo "OS information is collected..."
+```
+
+### 🔧 Commands Used
+
+|Command|Purpose|
+|---|---|
+|`whoami`|Displays current logged-in user|
+|`hostname`|Shows system hostname|
+|`ifconfig`|Displays network configurations|
+|`uname -a`|Prints kernel name and full OS information|
+|`touch`|Creates a new empty file|
+|`echo`|Prints text or variable to terminal/file|
+
+### 📄 Possible Output of `data.txt`
+
+```txt
+Username: student
+Hostname: ubuntu-machine
+Network info: eth0      Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx
+          inet addr:192.168.1.10  Bcast:192.168.1.255  Mask:255.255.255.0
+          ...
+OS info: Linux ubuntu-machine 5.15.0-100-generic #1 SMP Mon May 6 ...
+```
+
+---
+
+## 📶 Alive System Check Script
+
+```bash
+#!/bin/bash
+# Alive system check
+
+read -p "Enter an IP to check: " ip
+
+ping -c 4 $ip | grep "64 bytes" > test.txt
+
+if [ -s test.txt ]; then
+  echo "System is alive"
+else
+  echo "System is not alive"
+fi
+```
+
+### 🔍 Explanation
+
+|Line|Function|
+|---|---|
+|`read`|Gets user input (IP address)|
+|`ping`|Sends ICMP packets to the given IP|
+|`grep`|Filters response lines containing "64 bytes"|
+|`-s`|Checks if `test.txt` is non-empty|
+|`if-else`|Prints if the system is alive or not|
+
+### 📄 Possible Output of `test.txt`
+
+```txt
+64 bytes from 192.168.1.10: icmp_seq=1 ttl=64 time=0.052 ms
+64 bytes from 192.168.1.10: icmp_seq=2 ttl=64 time=0.048 ms
+64 bytes from 192.168.1.10: icmp_seq=3 ttl=64 time=0.050 ms
+64 bytes from 192.168.1.10: icmp_seq=4 ttl=64 time=0.049 ms
+```
+
+---
+
+## 📂 File Access Commands
+
+```bash
+chmod +x sys_cmd.sh   # Make script executable
+./sys_cmd.sh          # Run the script
+```
+
+Use `cat data.txt` or `cat test.txt` to view the results.
+
+---
+
+Let me know if you want to add error handling or more commands!
