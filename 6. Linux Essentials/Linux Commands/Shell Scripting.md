@@ -210,11 +210,8 @@ fi
 ---
 ---
 
-## title: System Commands in Shell Scripting  
-created: 2025-07-30  
-tags: [shell, scripting, linux, commands, practical]
 
-## 🖥️ What Are System Commands in Shell Scripting?
+## What Are System Commands in Shell Scripting?
 
 System commands are built-in or external utilities provided by the Linux/Unix operating system. These commands allow you to manage system-level tasks like checking the user, hostname, OS, and network configuration.
 
