@@ -276,7 +276,7 @@ OS info: Linux ubuntu-machine 5.15.0-100-generic #1 SMP Mon May 6 ...
 
 ---
 
-### Alive System Check Script
+## Alive System Check Script
 
 ```bash
 #!/bin/bash
