@@ -209,15 +209,18 @@ fi
 ```
 ---
 ---
-
-
-## What Are System Commands in Shell Scripting?
+## System Commands in Shell Scripting
 
 System commands are built-in or external utilities provided by the Linux/Unix operating system. These commands allow you to manage system-level tasks like checking the user, hostname, OS, and network configuration.
 
 ---
 
-## ✅ Basic System Info Script
+### Basic System Info Script
+```bash
+touch sys_cmd
+chmod +x sys_cmd
+mousepad sys_cmd&
+```
 
 ```bash
 #!/bin/bash
@@ -243,18 +246,25 @@ echo "OS info: $osinfo" >> data.txt
 echo "OS information is collected..."
 ```
 
-### 🔧 Commands Used
+### Commands Used
 
-|Command|Purpose|
-|---|---|
-|`whoami`|Displays current logged-in user|
-|`hostname`|Shows system hostname|
-|`ifconfig`|Displays network configurations|
-|`uname -a`|Prints kernel name and full OS information|
-|`touch`|Creates a new empty file|
-|`echo`|Prints text or variable to terminal/file|
+| Command    | Purpose                                    |
+| ---------- | ------------------------------------------ |
+| `whoami`   | Displays current logged-in user            |
+| `hostname` | Shows system hostname                      |
+| `ifconfig` | Displays network configurations            |
+| `uname -a` | Prints kernel name and full OS information |
+| `touch`    | Creates a new empty file                   |
+| `echo`     | Prints text or variable to terminal/file   |
+### Output of './sys_cmd '
 
-### 📄 Possible Output of `data.txt`
+```txt
+Username is collected...
+Hostname is collected...
+Network information is collected...
+OS information is collected...
+```
+### Output of `data.txt`
 
 ```txt
 Username: student
@@ -267,7 +277,7 @@ OS info: Linux ubuntu-machine 5.15.0-100-generic #1 SMP Mon May 6 ...
 
 ---
 
-## 📶 Alive System Check Script
+### Alive System Check Script
 
 ```bash
 #!/bin/bash
@@ -294,7 +304,7 @@ fi
 |`-s`|Checks if `test.txt` is non-empty|
 |`if-else`|Prints if the system is alive or not|
 
-### 📄 Possible Output of `test.txt`
+### Possible Output of `test.txt`
 
 ```txt
 64 bytes from 192.168.1.10: icmp_seq=1 ttl=64 time=0.052 ms
@@ -315,5 +325,3 @@ chmod +x sys_cmd.sh   # Make script executable
 Use `cat data.txt` or `cat test.txt` to view the results.
 
 ---
-
-Let me know if you want to add error handling or more commands!
