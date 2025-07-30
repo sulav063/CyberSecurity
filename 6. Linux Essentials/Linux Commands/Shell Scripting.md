@@ -303,8 +303,18 @@ fi
 |`grep`|Filters response lines containing "64 bytes"|
 |`-s`|Checks if `test.txt` is non-empty|
 |`if-else`|Prints if the system is alive or not|
+### Output of './sys_cmd '
 
+```txt
+OS information is collected...
+Enter an IP to check: 1.1.1.1
+System is alive
+```
 ### Possible Output of `test.txt`
+```bash
+cat test.txt
+
+```
 
 ```txt
 64 bytes from 192.168.1.10: icmp_seq=1 ttl=64 time=0.052 ms
