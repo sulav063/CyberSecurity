@@ -315,7 +315,7 @@ fi
 
 ---
 
-## 📂 File Access Commands
+### File Access Commands
 
 ```bash
 chmod +x sys_cmd.sh   # Make script executable
