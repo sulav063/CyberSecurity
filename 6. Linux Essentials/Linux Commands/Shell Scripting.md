@@ -292,7 +292,7 @@ else
 fi
 ```
 
-### 🔍 Explanation
+### Explanation
 
 |Line|Function|
 |---|---|
@@ -302,6 +302,10 @@ fi
 |`-s`|Checks if `test.txt` is non-empty|
 |`if-else`|Prints if the system is alive or not|
 ### Output of './sys_cmd '
+```bash
+chmod +x sys_cmd.sh   # Make script executable
+./sys_cmd             # Run the script
+```
 
 ```txt
 OS information is collected...
@@ -311,7 +315,6 @@ System is alive
 ### Possible Output of `test.txt`
 ```bash
 cat test.txt
-
 ```
 
 ```txt
@@ -323,13 +326,43 @@ cat test.txt
 
 ---
 
-### File Access Commands
-
+## File exits or not
 ```bash
-chmod +x sys_cmd.sh   # Make script executable
-./sys_cmd.sh          # Run the script
+touch file_check.sh
+chmod -x file_check.sh
+mousepad file_check.sh&
 ```
 
-Use `cat data.txt` or `cat test.txt` to view the results.
+### file_check.sh 'script'
+```bash
+#!/bin/bash
+
+# Ask user for a file name
+echo -n "Enter the file name: "
+read FILENAME
+
+# Check if file exists
+if [ -e "$FILENAME" ]; then
+    echo "$FILENAME already exists."
+else
+    echo "Creating $FILENAME..."
+    echo "This is a new file." > "$FILENAME"
+    echo "$FILENAME has been created."
+fi
+```
+
+```bash
+./file_check.sh       #Run Script
+```
+
+### Possible Output
+```txt
+Enter the file name: notes.txt
+Creating notes.txt...
+notes.txt has been created.
+				OR
+Enter the file name: notes.txt
+notes.txt already exists.
+```
 
 ---

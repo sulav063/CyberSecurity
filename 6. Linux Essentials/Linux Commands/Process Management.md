@@ -72,16 +72,16 @@ lsof -i :80                # List process using port 80
 7. Set size (e.g., 40 GB), check "**Store as a single file**" → Click **Next**.
 8. Click **Finish**, then **OK**.
 9. Start your Kali Linux VM.
-#### 💻 Step 2: Inside Kali Linux — Run These Commands
+#### Step 2: Inside Kali Linux — Run These Commands
 
 ```bash
-# 1️⃣ View all disks to detect the new one (usually /dev/sdb)
+# 1️ View all disks to detect the new one (usually /dev/sdb)
 lsblk
 
-# 2️⃣ Partition the new disk
+# 2️ Partition the new disk
 sudo fdisk /dev/<secondary_storage>
 
-# 👉 Inside fdisk, follow these steps:
+#  Inside fdisk, follow these steps:
 n       # new partition  
 p       # primary  
 1       # partition number  
@@ -92,19 +92,19 @@ w       # write changes and exit
 
 
 ```bash
-# 3️⃣ Format the new partition
+# 3️ Format the new partition
 sudo mkfs.ext4 /dev/<secondary_storage>1
 
-# 4️⃣ Check existing mount points
+# 4️ Check existing mount points
 sudo ls /mnt
 
-# 5️⃣ Create a mount point
+# 5️ Create a mount point
 sudo mkdir /mnt/<directory_name>
 
-# 6️⃣ Mount the formatted partition
+# 6️ Mount the formatted partition
 sudo mount /dev/<secondary_storage>1 /mnt/<directory_name>
 
-# 7️⃣ Confirm it is mounted
+# 7️  Confirm it is mounted
 lsblk
 ```
 
