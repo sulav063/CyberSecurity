@@ -164,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e23a9eb075337797",
+  "active": "946f2a811aa871e8",
   "lastOpenFiles": [
     "6. Linux Essentials/Linux Commands/Shell Scripting.md",
     "6. Linux Essentials/Linux Commands/Assignment (Basic Linux Commands).md",
