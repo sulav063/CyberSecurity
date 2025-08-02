@@ -364,4 +364,37 @@ notes.txt already exists.
 ```
 
 ---
-## Script 12 - 
+## Script 12 - Ping Swift
+
+### What is `ping`?
+The `ping` command is a **network utility** used to **test connectivity** between two devices (hosts) on a network. It works by sending **ICMP (Internet Control Message Protocol)** **Echo Request** packets to a target host and waiting for an **Echo Reply**.
+- If the target responds, it is considered **reachable**.
+- If there is no reply, the host might be **offline**, **unreachable**, or **not responding to ICMP**.
+### What is `swift` in `ping swift`?
+In the command `ping swift`, the word **`swift`** is a **hostname** — a **human-readable name** assigned to a device on the network.
+- Hostnames are used instead of IP addresses to make communication easier.
+- Before the `ping` command can work, the system must **resolve the hostname `swift` to an IP address**.
+- This is done using:
+    - The **`/etc/hosts`** file (local hostname mappings)
+    - Or a **DNS (Domain Name System)** server (for network-wide resolution)
+### pingswift.sh 'script'
+```bash
+#!/bin/bash
+
+if [ "$1" == "" ]; then
+    echo "You forgot to enter an IP base!"
+    echo "Usage: ./pingsw3p.sh 192.168.1"
+else
+    echo "Scanning network: $1.0/24 ..."
+
+    for ip in $(seq 1 254); do
+        full_ip="$1.$ip"
+        ping -c 1 -W 1 $full_ip > /dev/null
+
+        if [ $? -eq 0 ]; then
+            echo "$full_ip is up"
+            break  # stop scanning after finding first up host
+        fi
+    done
+fi
+```
