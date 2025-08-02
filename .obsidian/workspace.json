@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6. Linux Essentials/Linux Commands/Assignment (Basic Linux Commands).md",
+                "file": "6. Linux Essentials/Linux Commands/Shell Scripting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Assignment (Basic Linux Commands)"
+              "title": "Shell Scripting"
             }
           }
         ]
@@ -177,16 +177,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "946f2a811aa871e8",
+  "active": "e23a9eb075337797",
   "lastOpenFiles": [
-    "6. Linux Essentials/Linux Commands/Shell Scripting.md",
+    "6. Linux Essentials/Linux Commands/Process Management.md",
     "6. Linux Essentials/Linux Commands/Assignment (Basic Linux Commands).md",
+    "6. Linux Essentials/Linux Commands/Shell Scripting.md",
     "6. Linux Essentials/Linux Commands/Cronjobs.md",
     "6. Linux Essentials/Linux Directory Structure.png",
     "6. Linux Essentials/Linux Architcture.png",
     "6. Linux Essentials/Linux Architecture & Directory Structure.md",
     "6. Linux Essentials/History of Linux.md",
-    "6. Linux Essentials/Linux Commands/Process Management.md",
     "6. Linux Essentials/Linux Commands/Package Management.md",
     "6. Linux Essentials/Linux Commands/Basic Commands/Basic Linux Commands.md",
     "6. Linux Essentials/Linux Commands/Navigating File Systems.md",
