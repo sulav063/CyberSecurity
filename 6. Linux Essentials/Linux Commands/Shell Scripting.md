@@ -208,7 +208,7 @@ fi
 
 ```
 ---
-## System Commands in Shell Scripting
+## Script 9 - System Commands in Shell Scripting
 System commands are built-in or external utilities provided by the Linux/Unix operating system. These commands allow you to manage system-level tasks like checking the user, hostname, OS, and network configuration.
 
 ### Basic System Info Script
@@ -273,7 +273,7 @@ OS info: Linux ubuntu-machine 5.15.0-100-generic #1 SMP Mon May 6 ...
 
 ---
 
-## Alive System Check Script
+## Script 10 - Alive System Check Script
 
 ```bash
 #!/bin/bash
@@ -324,7 +324,7 @@ cat test.txt
 
 ---
 
-## File exits or not
+## Script 11 - File exits or not
 ```bash
 touch file_check.sh
 chmod -x file_check.sh
@@ -364,3 +364,4 @@ notes.txt already exists.
 ```
 
 ---
+## Script 12 - 
