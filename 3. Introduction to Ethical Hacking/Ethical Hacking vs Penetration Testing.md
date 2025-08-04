@@ -12,3 +12,5 @@
 | **Performed By**          | Certified ethical hackers (CEH), security analysts, consultants. | Pentesters, red teams, security testers. |
 | **Example Activities**    | Policy review, phishing simulations, employee awareness training, vulnerability scanning. | Network exploitation, web app testing, password cracking, privilege escalation. |
 
+---
+
