@@ -89,7 +89,7 @@ Evaluates the cybersecurity of connected vehicles.
 
 ---
 
-## Key Terminologies (Detailed)
+## Key Terminologies
 
 ### Vulnerability
 A flaw or weakness in a system that can be exploited by an attacker to gain unauthorized access or perform malicious actions. Vulnerabilities may exist in software, hardware, configurations, or human processes.
