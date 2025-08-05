@@ -119,7 +119,7 @@ Manipulative techniques used to trick individuals into revealing confidential in
 
 ---
 
-## Security Tools and Concepts (Detailed)
+## Security Tools and Concepts
 
 ### Antivirus
 A security application designed to detect, prevent, and remove malicious software. Antivirus programs monitor system activity, scan files and emails, and provide real-time protection. Popular examples include McAfee, Windows Defender, Avast, and Quick Heal.
