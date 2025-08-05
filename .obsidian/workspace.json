@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
+                "file": "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ethical Hacking vs Penetration Testing"
+              "title": "Domains of Penetration Testing"
             }
           }
         ]
@@ -155,8 +155,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -180,9 +180,12 @@
   },
   "active": "e23a9eb075337797",
   "lastOpenFiles": [
-    "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
+    "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
     "3. Introduction to Ethical Hacking/Types of Hackers.md",
     "3. Introduction to Ethical Hacking/What is Hacking.md",
+    "3. Introduction to Ethical Hacking/The Ethical Hacking Methodology.md",
+    "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
+    "3. Introduction to Ethical Hacking/A day in the life of an ethical hacker.md",
     "3. Introduction to Ethical Hacking/Introduction to Ethical Hacking.md",
     "6. Linux Essentials/Linux Commands/Shell Scripting.md",
     "6. Linux Essentials/Linux Commands/Process Management.md",
@@ -205,8 +208,6 @@
     "6. Linux Essentials/Linux Commands/Shells (Terminal Environments).md",
     "6. Linux Essentials/Linux Commands/File Content & Redirection.md",
     "6. Linux Essentials/Linux Commands/File Searching & Filtering.md",
-    "2. Introduction to Computing/Introduction to Computing.md",
-    "6. Linux Essentials/Linux Commands/Basic Linux Commands.md",
     "6. Linux Essentials/Linux Commands/Basic Commands/whoami.png",
     "6. Linux Essentials/Linux Commands/Basic Commands/vi2.png",
     "6. Linux Essentials/Linux Commands/Basic Commands/vi1.png",
@@ -217,7 +218,6 @@
     "6. Linux Essentials/Linux Commands/Basic Commands/clear2.png",
     "6. Linux Essentials/Linux Commands/Basic Commands",
     "6. Linux Essentials/Linux Commands/New folder",
-    "1. Introduction to Cyber security/Approaches.md",
     "6. Linux Essentials/Linux_Presentation.pptx",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.pkt~",
     "4.  Networking Essentials/Cisco Packet Tracer/Assignmnets/SOHO.pkt",
