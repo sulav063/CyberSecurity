@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Reconnaissance/WHOIS Lookup.md",
+                "file": "7. Reconnaissance/SHODAN, TheHarvester.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WHOIS Lookup"
+              "title": "SHODAN, TheHarvester"
             }
           }
         ]
@@ -179,9 +179,10 @@
   },
   "active": "e23a9eb075337797",
   "lastOpenFiles": [
+    "7. Reconnaissance/WHOIS Lookup.md",
+    "7. Reconnaissance/SHODAN, TheHarvester.md",
     "7. Reconnaissance/Types of Reconnaissance.md",
     "7. Reconnaissance/Reconnaissance.md",
-    "7. Reconnaissance/WHOIS Lookup.md",
     "6. Linux Essentials/Linux Commands/Networking Commands.md",
     "6. Linux Essentials/Linux Commands/Navigating File Systems.md",
     "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
@@ -207,7 +208,6 @@
     "6. Linux Essentials/Linux Commands/Sudo Overview.md",
     "6. Linux Essentials/Linux Commands/Internet & Networking Commands.md",
     "6. Linux Essentials/Linux Commands/User & Permission Management.md",
-    "6. Linux Essentials/Linux Commands/File & Directory Management.md",
     "6. Linux Essentials/Linux Commands/Basic Commands/whoami.png",
     "6. Linux Essentials/Linux Commands/Basic Commands/vi2.png",
     "6. Linux Essentials/Linux Commands/Basic Commands/vi1.png",
