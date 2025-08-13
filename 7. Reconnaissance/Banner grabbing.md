@@ -11,16 +11,17 @@ Banner grabbing is the technique of collecting information from service banners.
 curl -I http://example.com
 curl -I https://example.com
 ```
+---
 ### Using telnet
 ```bash
 telnet example.com 80
 ```
-    
+---
 #### Using Netcat
 ```bash
 nc example.com 80
 ```
-
+---
 #### HTTP HEAD request
 ```bash
 curl -s -I example.com | grep Server

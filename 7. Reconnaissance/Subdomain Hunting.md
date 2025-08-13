@@ -21,14 +21,14 @@ Subdomain hunting is the process of finding subdomains associated with a main do
 ```bash
 subfinder -d example.com
 ```
-
+---
 #### DNS Enumeration using dig
 ```bash
 dig @8.8.8.8 example.com MX
 dig example.com A
 dig example.com NS
 ```
-
+---
 #### Amass
 ```bash
 amass enum -d example.com

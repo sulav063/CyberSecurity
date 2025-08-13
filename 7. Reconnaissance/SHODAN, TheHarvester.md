@@ -9,26 +9,26 @@ You can search for exposed devices, banners, ports, or services using keywords l
 - `port:22`
 - `country:NP`
 ### Example Usage
-### 1. Search for open FTP servers in Nepal:
+### Search for open FTP servers in Nepal:
 ```bash
 ftp port:21 country:NP
 ```
-
-### 2. Search for Apache servers in Nepal:
+---
+### Search for Apache servers in Nepal:
 ```bash
 apache country:NP
 ```
-
-### 3. Find Cisco devices:
+---
+### Find Cisco devices:
 ```bash
 cisco
 ```
-
-### 4. Explore Amazon domain on Shodan:
+---
+### Explore Amazon domain on Shodan:
 ```bash
 hostname:amazon.com
 ```
-
+---
 ### For SHODAN Useful Sites
 - https://www.shodan.io
 ---
@@ -44,22 +44,22 @@ theHarvester -d <domain> -b <source>
 
 ### Example Commands Using Different Engines:
 
-#### 1. Using Google
+#### Using Google
 ```bash
 theHarvester -d example.edu.np -b google
 ```
-
-#### 2. Using Bing
+---
+#### Using Bing
 ```bash
 theHarvester -d examplebank.com.np -b bing
 ```
-
-#### 3. Using Brave
+----
+#### Using Brave
 ```bash
 theHarvester -d daraz.com.np -b brave
 ```
-
-### 4. Using Yahoo
+---
+### Using Yahoo
 ```bash
 theHarvester -d globalcollege.edu.np -b yahoo
 ```
