@@ -29,6 +29,8 @@ cisco
 hostname:amazon.com
 ```
 
+### For SHODAN Useful Sites
+- https://www.shodan.io
 ---
 ## theHarvester - OSINT Tool for Gathering Emails, Subdomains
 theHarvester is used for gathering emails, subdomains, hosts, and employee names from different public sources.
@@ -77,3 +79,15 @@ Use `telnet` to check open ports manually:
 ```bash
 telnet <host> <port>
 ```
+
+---
+### For TheHarvester Useful Sites
+
+- Sources it uses internally:
+    - Google
+    - Bing
+    - Yahoo
+    - DuckDuckGo
+    - LinkedIn (limited)
+    - Baidu
+----
