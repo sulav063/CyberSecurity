@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "8. Scanning & Enumeration/Vulnerability scanning with Nessus.md",
+                "file": "8. Scanning & Enumeration/vii. Vulnerability scanning with Nessus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vulnerability scanning with Nessus"
+              "title": "vii. Vulnerability scanning with Nessus"
             }
           }
         ]
@@ -177,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e23a9eb075337797",
+  "active": "946f2a811aa871e8",
   "lastOpenFiles": [
     "8. Scanning & Enumeration/v. Common Services Enumeration.md",
     "8. Scanning & Enumeration/iv. Utilizing Nmap Scripting Engine.md",
@@ -188,7 +188,7 @@
     "9. Exploitation/iii. Introduction to Metasploit Framework.md",
     "9. Exploitation/ii. Types of Shells and Payloads.md",
     "9. Exploitation/i. Overview.md",
-    "8. Scanning & Enumeration/Vulnerability scanning with Nessus.md",
+    "8. Scanning & Enumeration/vii. Vulnerability scanning with Nessus.md",
     "9. Exploitation",
     "6. Linux Essentials/Linux Commands/Shell Scripting.md",
     "6. Linux Essentials/Assignment.pdf",
