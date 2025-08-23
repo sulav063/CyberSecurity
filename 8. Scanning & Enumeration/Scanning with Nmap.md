@@ -1,14 +1,24 @@
-Nmap ("Network Mapper") is a powerful open-source tool for network discovery and security auditing. It helps identify live hosts, open ports, running services, versions, and possible vulnerabilities.
+Nmap ("Network Mapper") is an open-source tool for network discovery and security auditing.  It can identify live hosts, open ports, services, OS details, and vulnerabilities.
+
+Nmap helps in:
+- **Host discovery**
+- **Port scanning**
+- **Service & OS detection**
+- **Vulnerability assessment**
 
 ---
-### Common Operators and Examples
-#### Basic Nmap Scan
+
+## Common Operators and Examples
+
+###   Basic Nmap Scan
+Scans the **1000 most common TCP ports** on a target IP.
+
 ```bash
-nmap 192.168.1.10                             # Scan the 1000 most common TCP                                                    ports on target IP
+nmap 192.168.1.10
 ```
 
-Example Output:
-```bash
+**Example Output:**
+```
 Starting Nmap 7.93 ( https://nmap.org ) at 2025-08-13
 Nmap scan report for 192.168.1.10
 Host is up (0.0020s latency).
@@ -17,16 +27,15 @@ PORT     STATE SERVICE
 22/tcp   open  ssh
 80/tcp   open  http
 443/tcp  open  https
-
 ```
+
 ---
-#### Full Port Scan
+### Full Port Scan (All 65535 Ports)
 ```bash
-nmap -p- 192.168.1.10                         # Scan all 65535 TCP ports on target                                               IP
+nmap -p- 192.168.1.10
 ```
-
-Example Output:
-```bash
+**Example Output:**
+```
 PORT      STATE  SERVICE
 21/tcp    open   ftp
 22/tcp    open   ssh
@@ -34,90 +43,148 @@ PORT      STATE  SERVICE
 443/tcp   open   https
 3306/tcp  open   mysql
 ```
+
 ---
-#### Service Version Detection
+### Scan a Specific Port Range
 ```bash
-nmap -sV 192.168.1.10                         # Detect running services and                                                      versions on open ports
+nmap -p1-40000 192.168.10.13
+```
+- `-p1-40000` → Scans ports from 1 to 40000  
+**Example Output:**
+```
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+3306/tcp  open  mysql
 ```
 
-Example Output:
+---
+### Scan Specific Ports Only
 ```bash
+nmap -p 22,80,443 192.168.1.10
+```
+**Example Output:**
+```
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+```
+
+---
+### Service Version Detection
+Detects **running services and versions**:
+```bash
+nmap -sV 192.168.1.10
+```
+**Example Output:**
+```
 PORT     STATE SERVICE VERSION
-22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2
 80/tcp   open  http    Apache httpd 2.4.38 ((Debian))
 443/tcp  open  https   nginx 1.14.0
 ```
----
-#### Operating System Detection
+
+**Advanced Variant:**
 ```bash
-nmap -O 192.168.1.10                          # Detect the OS of the target machine
+nmap -T5 -sV 192.168.10.15   # Fast service version detection
 ```
 
-Example Output:
+---
+### OS Detection
 ```bash
+nmap -O 192.168.1.10
+```
+**Example Output:**
+```
 Running: Linux 3.X|4.X
 OS CPE: cpe:/o:linux:linux_kernel:3
 OS details: Linux 3.2 - 4.9
 Network Distance: 1 hop
 ```
----
-#### Aggressive Scan (OS, versions, scripts, traceroute)
+
+**Combined with Service Detection:**
 ```bash
-nmap -A 192.168.1.10                          # Detailed scan with OS detection,                                                 version detection, NSE scripts,                                                    traceroute
+nmap -T5 -O -sV 192.168.150.15
 ```
 
-Example Output:
+---
+### Aggressive Scan (OS + Versions + NSE + Traceroute)
 ```bash
+nmap -A 192.168.1.10
+```
+**Example Output:**
+```
 PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+22/tcp open  ssh     OpenSSH 7.9p1 Debian
 | ssh-hostkey:
-|   2048 01:23:45:67:89:ab:cd:ef:01:23:45:67:89:ab:cd:ef (RSA)
-80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|   2048 01:23:45:67:89:ab:cd:ef
+80/tcp open  http    Apache httpd 2.4.38
 | http-server-header: Apache/2.4.38 (Debian)
 |_http-title: Apache2 Debian Default Page: It works
 443/tcp open  https   nginx 1.14.0
 ```
----
-#### Vulnerability Scan with NSE Scripts
+
+**Aggressive + Fast Timing:**
 ```bash
-nmap --script=vuln 192.168.1.10               # Scan for known vulnerabilities                                                   using NSE scripts
+nmap -T5 -A 192.168.150.131
 ```
 
-Example Output:
-```bash
-PORT   STATE SERVICE
-80/tcp open  http
-|_http-vuln-cve2017-5638: Apache Struts2 Remote Code Execution vulnerability
-```
 ---
-####  UDP Port Scan
+### Fast Scans with Timing Templates
+- `-T4` → Faster than normal  
+- `-T5` → **Insane speed**, less stealthy  
+
+**Examples:**
 ```bash
-nmap -sU 192.168.1.10                         # Scan UDP ports on the target IP
+nmap -T4 192.168.1.10
+nmap -T5 -p- 192.168.10.11
 ```
 
-Example Output:
+---
+### UDP Port Scan
 ```bash
+nmap -sU 192.168.1.10
+```
+**Example Output:**
+```
 PORT    STATE         SERVICE
 53/udp  open          domain
 123/udp open          ntp
 161/udp open          snmp
 ```
+
 ---
-#### Scan Specific Ports Only
+### Vulnerability Scan with NSE
 ```bash
-nmap -p 22,80,443 192.168.1.10                # Scan only ports 22, 80, and 443
+nmap --script=vuln 192.168.1.10
+```
+**Example Output:**
+```
+PORT   STATE SERVICE
+80/tcp open  http
+|_http-vuln-cve2017-5638: Apache Struts2 RCE vulnerability
 ```
 
-Example Output:
-```bash
-PORT    STATE SERVICE
-22/tcp  open  ssh`
-80/tcp  open  http
-443/tcp open  https
-```
 ---
-#### Scan with Increased Speed
+### Save Output to File
 ```bash
-nmap -T4 192.168.1.10                         # Scan with faster timing template                                                 (less stealthy)
+nmap -T5 -oN metasploitable 192.168.150.131
 ```
+- `-oN` → Save output in **normal format**
+
 ---
+##  Quick Command Recap
+```
+nmap -p1-40000 192.168.10.13    → Port range scan
+nmap -p- 192.168.10.11          → All ports
+nmap -T5 -p- 192.168.10.11      → Fast full scan
+nmap -sV 192.168.150.131        → Service version detection
+nmap -T5 -sV 192.168.10.15      → Service version + fast timing
+nmap -T5 -O -sV 192.168.150.15  → OS + service detection
+nmap -T5 -A 192.168.150.131     → Aggressive scan
+nmap -T5 -oN metasploitable 192.168.150.131 → Save output
+```
+
+---
+

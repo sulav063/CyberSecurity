@@ -17,6 +17,81 @@ Before diving into port scanning and service enumeration, it is crucial to ident
     - **Nmap Ping Scan:** Combines several techniques to detect hosts.
 ---
 ## Common Commands and Examples
+### Using `netdiscover`
+
+```bash
+sudo netdiscover -r 10.10.10.0/24
+```
+	-r: Specify the IP range for scanning.
+Possible output:
+```bash
+IP               MAC Address        Count  Len  Vendor
+10.10.10.1       00:50:56:c0:00:01   3      60  VMware, Inc.
+10.10.10.10      00:0c:29:af:44:55   2      60  VMware, Inc.
+```
+
+---
+### Using `arp-scan`
+```bash
+sudo arp-scan -l
+```
+
+	- Scans the local network using ARP requests.
+	- Advantage: Cannot be blocked by firewalls because ARP works at Layer 2.
+Possible output:
+```bash
+Interface: eth0, datalink type: EN10MB (Ethernet)
+Starting arp-scan 1.9 with 256 hosts
+192.168.1.1   00:11:22:33:44:55   Cisco Systems
+192.168.1.10  00:0c:29:af:44:55   VMware, Inc.
+```
+---
+### Using `nmap` Ping Sweep
+```bash
+nmap -sn 10.10.10.0/24
+```
+	- `-sn`: Ping scan only (no port scan).
+Possible output:
+```bash
+Nmap scan report for 10.10.10.1
+Host is up (0.00043s latency).
+Nmap scan report for 10.10.10.10
+Host is up (0.00023s latency).
+Nmap done: 256 IP addresses (3 hosts up) scanned in 3.12 seconds
+```
+---
+### Using `ping`
+```bash
+ping -c 4 192.168.1.1
+```
+	- `-c 4`: Send 4 packets to verify connectivity.
+Possible Output:
+```bash
+64 bytes from 192.168.1.1: icmp_seq=1 ttl=64 time=0.123 ms
+64 bytes from 192.168.1.1: icmp_seq=2 ttl=64 time=0.116 ms
+...
+4 packets transmitted, 4 packets received, 0% packet loss
+
+```
+---
+### Using `fping` for Ping Sweep
+```bash
+fping -a -g 192.168.1.1 192.168.1.254
+```
+	- `-a`: Show alive hosts only. 
+	- `-g`: Generate IP range.
+Possible output:
+```bash
+192.168.1.1 is alive
+192.168.1.12 is alive
+192.168.1.34 is alive
+```
+---
+### Using `arp-scan` (Local Network)
+```bash
+arp-scan --localnet
+```
+	- Sends ARP requests to detect all active hosts on the subnet.
 
 ---
 ### Summary

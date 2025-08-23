@@ -77,3 +77,18 @@ PORT    STATE SERVICE
 |_  Public Key type: rsa
 ```
 ---
+### Additional NSE Commands
+#### Default Scripts + Version Detection
+```bash
+nmap -T4 -sC -sV 192.168.100.129
+```
+#### Run Vulnerability Scripts
+```bash
+nmap -T4 --script=vuln 192.168.100.131
+```
+#### Default Scripts Only
+```bash
+nmap -T4 -sC 192.168.1.10
+```
+---
+
