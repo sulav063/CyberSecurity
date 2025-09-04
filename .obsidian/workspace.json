@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "9. Exploitation/v. Vulnerability Exploitation and Windows Password Cracking using MS17-010 (EternalBlue).md",
+                "file": "9. Exploitation/Creating your own payloads.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "v. Vulnerability Exploitation and Windows Password Cracking using MS17-010 (EternalBlue)"
+              "title": "Creating your own payloads"
             }
           }
         ]
@@ -180,8 +180,9 @@
   },
   "active": "e23a9eb075337797",
   "lastOpenFiles": [
-    "9. Exploitation/iv. Attacking Common Services.md",
     "9. Exploitation/v. Vulnerability Exploitation and Windows Password Cracking using MS17-010 (EternalBlue).md",
+    "9. Exploitation/Creating your own payloads.md",
+    "9. Exploitation/iv. Attacking Common Services.md",
     "9. Exploitation/v. Vulnerability Exploitation and Windows Password Cracking using MS17-010 (EternalBlue)",
     "8. Scanning & Enumeration/vii. Vulnerability scanning with Nessus.md",
     "8. Scanning & Enumeration/v. Common Services Enumeration.md",
@@ -215,7 +216,6 @@
     "7. Reconnaissance/Types of Reconnaissance.md",
     "7. Reconnaissance/Reconnaissance.md",
     "3. Introduction to Ethical Hacking/Domains of Penetration Testing.md",
-    "3. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
     "6. Linux Essentials/Linux Directory Structure.png",
     "6. Linux Essentials/Linux Architcture.png",
     "6. Linux Essentials/Linux Commands/Basic Commands/whoami.png",
