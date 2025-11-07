@@ -1,5 +1,5 @@
 {
-  "commitMessage": "{{date}}",
+  "commitMessage": "Linux PrivEsc Arena - Task 3",
   "autoCommitMessage": "{{date}}",
   "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",

@@ -142,3 +142,26 @@ ls -la
 
 ## Kernel Exploits
 ### Task 3 - Privilege Escalation - Kernel Exploits
+
+```bash
+# 1. System info
+uname -a
+cat /proc/version
+
+# 2. Find SUID binaries
+find / -perm -u=s -type f 2>/dev/null
+
+# 3. Load malicious kernel module
+insmod malicious.ko
+lsmod | grep malicious
+
+# 4. Trigger privilege escalation
+/tmp/escalate
+# OR
+./exploit -p $(id -u)
+
+# 5. Verify root
+id
+sudo -l
+whoami
+```
