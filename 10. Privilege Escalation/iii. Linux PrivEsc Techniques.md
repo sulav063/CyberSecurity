@@ -141,7 +141,7 @@ ls -la
 ---
 
 ## Kernel Exploits
-### Task 3 - Privilege Escalation - Kernel Exploits
+### Task 3 - Privilege Escalation - Kernel Exploits (Tryhackme)
 
 ```bash
 # 1. System info
@@ -165,3 +165,5 @@ id
 sudo -l
 whoami
 ```
+
+---
