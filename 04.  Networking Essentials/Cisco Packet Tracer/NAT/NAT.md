@@ -1,6 +1,6 @@
 # 🌐 Cisco Packet Tracer Full Setup – DHCP, NAT, Static Routing
 
-![[4.  Networking Essentials/Cisco Packet Tracer/NAT/NAT.png]]
+![[04.  Networking Essentials/Cisco Packet Tracer/NAT/NAT.png]]
 
 ---
 

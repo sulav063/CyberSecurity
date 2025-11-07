@@ -1,4 +1,4 @@
-![[staticrouting.png]]
+![[04.  Networking Essentials/Cisco Packet Tracer/Static Routing/staticrouting.png]]
 
 ---
 

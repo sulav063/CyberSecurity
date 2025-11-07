@@ -1,5 +1,5 @@
 
-![[NAT.png]]
+![[04.  Networking Essentials/Cisco Packet Tracer/Assignmnets/NAT.png]]
 ## Step 1: Network Design & IP Plan
 
 |Network|Subnet|Router Interface IP|Description|

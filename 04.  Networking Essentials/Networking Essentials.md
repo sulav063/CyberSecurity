@@ -1,9 +1,9 @@
 
-- [[Brief History of Networking]]
+- [[Brief history of Networking]]
 - [[LAN, MAN & WAN]]
 - [[Networking Devices]]
 - [[Networking Architecture]]
-- [[OSI Model]]
+- [[OSI model]]
 - [[IP Addresses]]
 - [[Subnetting]]
 - [[Routing and Switching]]
