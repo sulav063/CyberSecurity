@@ -137,3 +137,8 @@ ls -la
 - Use the lab-provided username and connection info do not brute force.
     
 - Always use labs only for testing; never attack unauthorized systems.
+
+---
+
+## Kernel Exploits
+### Task 3 - Privilege Escalation - Kernel Exploits
