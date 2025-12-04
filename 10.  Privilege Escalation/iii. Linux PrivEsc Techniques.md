@@ -1,5 +1,5 @@
 
-# TryHackMe — Connect to VPN & Access Lab Machine (Linux PrivEsc / Lab Steps)
+# TryHackMe - Connect to VPN & Access Lab Machine (Linux PrivEsc / Lab Steps)
 
 > Use these steps only in authorized labs (TryHackMe). They show how to download and use the OpenVPN config, confirm your interfaces, start the lab VM from the website, and SSH into the VM.
 
