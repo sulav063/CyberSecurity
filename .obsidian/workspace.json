@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "iii. Linux PrivEsc Techniques"
             }
+          },
+          {
+            "id": "2d5f6608ebc3130a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,8 +191,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3a806f7cc54b4f14",
+  "active": "2d5f6608ebc3130a",
   "lastOpenFiles": [
+    "10.  Privilege Escalation/iv. WIndows PrivEsc Techniques.md",
     "Untitled.base",
     "10.  Privilege Escalation/iii. Linux PrivEsc Techniques.md",
     "10.  Privilege Escalation/ii. Types of Privilege Escalation.md",
