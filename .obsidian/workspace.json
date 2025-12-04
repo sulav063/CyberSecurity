@@ -180,6 +180,7 @@
   },
   "active": "946f2a811aa871e8",
   "lastOpenFiles": [
+    "10.  Privilege Escalation/iii. Linux PrivEsc Techniques.md",
     "10.  Privilege Escalation/i. What is Privilege Escalation.md",
     "10.  Privilege Escalation/ii. Types of Privilege Escalation.md",
     "10.  Privilege Escalation",
@@ -215,7 +216,6 @@
     "06. Linux Essentials/Linux Commands/Basic Commands/Basic Linux Commands.md",
     "07. Reconnaissance/Banner grabbing.md",
     "07. Reconnaissance/Subdomain Hunting.md",
-    "07. Reconnaissance/OSINT techniques.md",
     "06. Linux Essentials/Linux Directory Structure.png",
     "06. Linux Essentials/Linux Architcture.png",
     "06. Linux Essentials/Linux Commands/Basic Commands/whoami.png",
