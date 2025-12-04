@@ -140,13 +140,13 @@ ls -la
 
 ---
 
-#  TASK 1 — No questions (information only)
+## TASK 1 — No questions (information only)
 
 No commands required.
 
 ---
 
-# **🔷 TASK 2 — No questions (connect to machine)**
+## TASK 2 — No questions (connect to machine)
 
 Login credentials provided in the room:
 
@@ -177,7 +177,7 @@ Dirty COW (CVE-2016-5195)
 
 ---
 
-# ## TASK 4 — “What user’s credentials were exposed in the OpenVPN auth file?”
+## TASK 4 — “What user’s credentials were exposed in the OpenVPN auth file?”
 
 ### Step 1 — View the OpenVPN auth file
 
@@ -193,7 +193,7 @@ user
 
 ---
 
-# ## TASK 5 — “What was the password discovered in TCM’s bash history?”
+## TASK 5 — “What was the password discovered in TCM’s bash history?”
 
 ### Step 1 — Read bash history
 ```bash
@@ -209,7 +209,7 @@ password123
 
 ---
 
-# ## TASK 6 — “What are the permissions on the /etc/shadow file?”
+## TASK 6 — “What are the permissions on the /etc/shadow file?”
 
 ### Step 1 — List permissions
 ```bash
@@ -224,7 +224,7 @@ Displays who can read/write the system’s hashed password file.
 
 ---
 
-# ## TASK 7 — “What is the full path of the private key file you discovered?”
+## TASK 7 — “What is the full path of the private key file you discovered?”
 
 ### Step 1 — Search for private SSH keys
 ```bash
@@ -238,7 +238,7 @@ Searches the entire filesystem for private RSA SSH keys.
 
 ---
 
-# ## TASK 8 — “What program does TCM have sudo privileges to run?”
+## TASK 8 — “What program does TCM have sudo privileges to run?”
 
 ### Step 1 — Check sudo privileges
 ```bash
@@ -259,7 +259,7 @@ find
 
 ---
 
-# ## TASK 9 — “What is the root password?”
+## TASK 9 — “What is the root password?”
 
 ### Step 1 — Abuse Apache config loading
 ```bash
@@ -285,7 +285,7 @@ password123
 
 ---
 
-# ## TASK 10 — “Exploit the LD_PRELOAD vulnerability. What is the name of the file you created?”
+## TASK 10 — “Exploit the LD_PRELOAD vulnerability. What is the name of the file you created?”
 
 ### Step 1 — Create malicious shared object
 ```bash
@@ -312,7 +312,7 @@ x.so
 
 ---
 
-# ## TASK 11 — “What file did the SUID binary expect that we were able to hijack?”
+## TASK 11 — “What file did the SUID binary expect that we were able to hijack?”
 
 ### Step 1 — Inspect SUID binary
 ```bash
@@ -360,7 +360,7 @@ libcalc.so
 
 ---
 
-# ## TASK 12 — “What CVE is being exploited?”
+## TASK 12 — “What CVE is being exploited?”
 
 ### Step 1 — Check nginx version
 ```bash
@@ -374,7 +374,7 @@ CVE-2016-1247`
 ```
 ---
 
-# ## TASK 13 — “What is the last line shown in the ‘strings’ output?”
+## TASK 13 — “What is the last line shown in the ‘strings’ output?”
 
 ### Step 1 — Run strings
 ```bash
@@ -389,7 +389,7 @@ service apache2 start
 
 ---
 
-# ## TASK 14 — “What is the last line shown in the ‘strings’ output?”
+## TASK 14 — “What is the last line shown in the ‘strings’ output?”
 
 ### Step 1 — Run strings
 ```bash
@@ -405,7 +405,7 @@ Same idea as previous: look at embedded commands.
 
 ---
 
-# ## TASK 15 — “What file has the ‘cap_setuid’ capability set?”
+## TASK 15 — “What file has the ‘cap_setuid’ capability set?”
 
 ### Step 1 — List capabilities
 ```bash
@@ -426,7 +426,7 @@ Uses Python's ability to set UID to 0 (root) and run a shell.
 
 ---
 
-# ## TASK 16 — “What is the name of the cron job script?”
+## TASK 16 — “What is the name of the cron job script?”
 
 ### Step 1 — Check cron jobs
 ```bash
@@ -441,7 +441,7 @@ overwrite.sh
 
 ---
 
-# ## TASK 17 — “What wildcard file did you create?”
+## TASK 17 — “What wildcard file did you create?”
 
 ### Wildcard exploit files
 ```bash
@@ -460,7 +460,7 @@ Forces the cron job to execute your script.
 ```
 ---
 
-# ## TASK 18 — “What file did you modify to gain root?”
+## TASK 18 — “What file did you modify to gain root?”
 
 ### Step 1 — Modify the cron script
 ```bash
@@ -475,7 +475,7 @@ Injects malicious code that runs as root during the cron job.
 
 ---
 
-# ## TASK 19 — “Which option must be set in /etc/exports to exploit NFS?”
+## TASK 19 — “Which option must be set in /etc/exports to exploit NFS?”
 
 ### Step 1 — View NFS exports
 ```bash
@@ -493,3 +493,4 @@ This allows remote root users to remain root on mounted shares.
 ```bash
 no_root_squash
 ```
+
