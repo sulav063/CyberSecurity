@@ -207,5 +207,55 @@ reg save HKLM\SYSTEM system
 ---
 ---
 
+## TASK 1 — Connect to the Machine
 
+### Question:
 
+_No question — informational task only._
+### Steps:
+
+- Connect to the Windows machine using RDP.
+    
+### Steps (with commands + solution):
+```bash
+xfreerdp /u:user /p:password321 /w:1000 /h:650 /v:10.10.X.x
+```
+
+### Answer:
+
+_No answer required._
+
+---
+## TASK 2 — Autorun Registry PrivEsc
+
+### Question:
+What is the name of the program configured to run at startup that you can modify for privilege escalation?
+### Steps:
+- Open Autoruns tool.
+- Navigate to the **Logon** tab.
+- Identify startup programs.
+- Check permissions on suspicious entries.
+- Find a writable executable.
+
+Open Autoruns:
+```bash
+C:\Users\User\Desktop\Tools\Autoruns\Autoruns64.exe
+```
+
+Check Logon entries and find:
+```bash
+My Program → C:\Program Files\Autorun Program\program.exe
+```
+
+Check permissions:
+```bash
+C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\Autorun Program"
+```
+The directory is writable by all users.
+
+Answer:
+```bash
+program.exe
+```
+
+---
