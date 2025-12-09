@@ -23,45 +23,69 @@ Examples:
 - Microsoft SQL Server
 - Oracle Database
 
-**Use Case:**  
+Use Case:
 Finance, banking, inventory management, enterprise systems where data integrity is critical.
 
-**Example SQL Query:**
+Example SQL Query:
+```bash
+SELECT u.name, u.email, COUNT(o.id) AS total_orders
+FROM users u
+JOIN orders o ON u.id = o.user_id
+WHERE u.status = 'active'
+GROUP BY u.name, u.email
+HAVING COUNT(o.id) > 5
+ORDER BY total_orders DESC;
+```
 
-`SELECT name, email FROM users WHERE status = 'active';`
+- `JOIN`: Combines **users** and **orders** tables.
+- `WHERE`: Filters only **active users**.
+- `GROUP BY`: Groups results by user.
+- `COUNT()`: Counts total orders per user.
+- `HAVING`: Filters users with **more than 5 orders**.
+- `ORDER BY`: Sorts users by number of orders in **descending order**.
 
 ---
 
 ### 2. NoSQL Databases (Non-Relational Databases)
-
-**Definition:**  
 NoSQL databases store data in **flexible, non-tabular formats**, such as **documents, key-value pairs, or graphs**. They are designed for **high performance and scalability**, especially for large and dynamic datasets.
 
-**Features:**
-
+Features:
 - Schema-less or **flexible schema**.
-    
 - High **horizontal scalability** (easy to distribute across servers).
-    
 - Handles **big data** and **real-time applications** efficiently.
-    
 - Optimized for **speed and performance** rather than strict relationships.
-    
 
-**Examples:**
-
+Examples:
 - MongoDB (document-based)
-    
 - Redis (key-value store)
-    
 - Cassandra (column-based)
-    
 - Neo4j (graph-based)
-    
 
-**Use Case:**  
+Use Case:
 Big data, IoT, real-time analytics, social media platforms.
 
-**Example NoSQL Document (MongoDB):**
+Example NoSQL Document (MongoDB):
+```bash
+{     
+	"name": "Alice",
+	"email": "alice@example.com",
+	"status": "active"
+}
+```
 
-`{     "name": "Alice",     "email": "alice@example.com",     "status": "active" }`
+----
+## SQL vs NoSQL
+|Factor|SQL (Relational)|NoSQL (Non-Relational)|
+|---|---|---|
+|**Data Structure**|Table-based (rows & columns)|Document-based, key-value, graph, or column-family|
+|**Schema**|Fixed, predefined|Flexible, dynamic schema|
+|**Query Language**|SQL|No standard language (varies by DB, e.g., MongoDB uses JSON queries)|
+|**Scalability**|Vertical scaling (upgrade server hardware)|Horizontal scaling (add more servers)|
+|**Consistency**|Strong consistency|Eventual consistency (some DBs allow tunable consistency)|
+|**Transactions**|Supports ACID properties|Limited or BASE properties (Basically Available, Soft state, Eventual consistency)|
+|**Performance**|Good for structured data & complex queries|High performance for large or unstructured data|
+|**Use Case**|Finance, banks, ERP, inventory management|Big data, IoT, social media, real-time apps|
+|**Examples**|MySQL, PostgreSQL, Oracle|MongoDB, Redis, Cassandra, Neo4j|
+|**Data Relationships**|Supports complex joins and relationships|Relationships often managed in application code|
+|**Flexibility**|Less flexible – schema changes require migrations|Highly flexible – schema can evolve easily|
+|**Storage**|Relational tables|Documents, key-value pairs, graphs, columns|
