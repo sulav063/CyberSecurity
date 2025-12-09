@@ -33,4 +33,56 @@ Key Points:
 ---
 ### ## Creating a Table in MySQL
 
-Example – Creating a `users` table:*
+```
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+- `id INT AUTO_INCREMENT PRIMARY KEY` → Unique identifier that increments automatically.
+- `name VARCHAR(50) NOT NULL` → Name column, max 50 characters, cannot be empty.
+- `email VARCHAR(100) UNIQUE NOT NULL` → Email must be unique.
+- `created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP` → Records creation time automatically.
+
+### Inserting Data into Table
+```
+INSERT INTO users (name, email)
+VALUES ('Alice', 'alice@example.com'),
+       ('Bob', 'bob@example.com');
+```
+
+### Querying Data (Select Example)
+```
+SELECT id, name, email 
+FROM users 
+WHERE id > 1
+ORDER BY name ASC;
+```
+- `WHERE` → Filters records (id > 1).
+- `ORDER BY` → Sorts results alphabetically by `name`.
+
+### Updating Data
+```
+UPDATE users 
+SET email = 'alice_new@example.com' 
+WHERE name = 'Alice';
+```
+Updates Alice’s email in the table.
+
+### Deleting Data
+```
+DELETE FROM users 
+WHERE name = 'Bob';
+```
+Deletes Bob’s record from the table.
+
+---
+## Why Use MySQL?
+- Reliable and proven **RDBMS** for web and enterprise apps.
+- Supports **complex queries, joins, and transactions**.
+- Works well with **server-side languages** like PHP, Python, and NodeJS.
+- Provides **data security** and **backup options**.
+- Easy to learn for beginners, yet powerful for advanced developers.
+---
