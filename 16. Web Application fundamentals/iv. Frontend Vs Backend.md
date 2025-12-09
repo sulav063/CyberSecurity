@@ -45,3 +45,5 @@ Backend is the behind-the-scenes logic that processes user actions, manages data
 |Data access|No direct DB access|Full DB access|
 |Role|Presentation layer|Business logic layer|
 |Security risk|XSS|SQL injection|
+
+---
