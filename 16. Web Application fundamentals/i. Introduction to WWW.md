@@ -37,3 +37,22 @@ The WWW is a system that allows users to access webpages and online resources th
 - **Hyperlinks** – Connect webpages.
 
 ---
+## Features of WWW
+
+1. Hypertext system
+    - Uses hyperlinks to jump from one resource to another
+    - Uses URLs for location
+2. Global accessibility
+    - Accessible anywhere with Internet
+3. Multimedia integration
+    - Supports text, images, videos, GIFs, audio
+4. Client–server model
+    - Browser (client) requests
+    - Server responds
+5. Platform independent
+    - Can be accessed from Windows, Linux, Mac, mobile
+6. Scalable
+    - Billions of users
+7. Interactive
+    - Modern web apps respond to user input
+---
