@@ -55,74 +55,47 @@ If using HTTPS, it also performs:
 ### TLS Handshake
 
 - Client Hello
-    
 - Server Hello
-    
 - Certificate exchange
-    
 - Encryption keys generated
-    
-- Secure connection established
-    
+- Secure connection established    
 
 ---
 
-### **STEP 5: Browser sends HTTP request**
-
+### STEP 5: Browser sends HTTP request
 Example Request:
-
 `GET /products HTTP/1.1 Host: amazon.com User-Agent: Chrome Accept: text/html`
 
 ---
-
-### **STEP 6: Server processes request**
+### STEP 6: Server processes request
 
 Server might:
-
 - Execute PHP/Python/NodeJS code
-    
 - Query database
-    
 - Apply business logic
-    
 - Prepare HTML response
-    
-
 ---
 
-### **STEP 7: Server sends HTTP response**
-
+### STEP 7: Server sends HTTP response
 Example:
-
 `HTTP/1.1 200 OK Content-Type: text/html`
 
 Then sends:
-
 - HTML
-    
 - CSS
-    
 - JS
-    
 - Images
-    
 - API data
-    
 
 ---
 
-### **STEP 8: Browser renders content**
-
+### STEP 8: Browser renders content
 Rendering involves:
-
 1. Parsing HTML
-    
 2. Building DOM
-    
 3. Loading CSS
-    
 4. Applying styles
-    
 5. Running JavaScript
-    
 6. Rendering graphics
+
+---
