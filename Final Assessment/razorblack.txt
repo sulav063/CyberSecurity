@@ -1496,7 +1496,6 @@ Impacket v0.14.0.dev0+20260130.223114.851fea86 - Copyright Fortra, LLC and its a
 /usr/local/bin/secretsdump.py:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
   __import__('pkg_resources').run_script('impacket==0.14.0.dev0+20260130.223114.851fea86', 'secretsdump.py')
 Impacket v0.14.0.dev0+20260130.223114.851fea86 - Copyright Fortra, LLC and its affiliated companies 
-
 [-] [Errno 2] No such file or directory: 'system.bak'
 [*] Cleaning up... 
                                                                                                         
