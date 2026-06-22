@@ -118,3 +118,27 @@ sudo mount /dev/sdb1 /mnt/data
 lsblk
 
 ```
+
+---
+
+### Background Jobs
+
+```bash
+jobs                 # Show background jobs
+bg                   # Resume job in background
+fg                   # Bring job to foreground
+```
+
+### Process Priority
+
+```bash
+nice -n 10 command   # Start with lower priority
+renice 10 PID        # Change process priority
+```
+
+### Send Signals
+
+```bash
+kill -9 PID          # Force kill process
+killall firefox      # Kill all firefox processes
+```

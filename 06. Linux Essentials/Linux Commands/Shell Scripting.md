@@ -398,3 +398,55 @@ else
     done
 fi
 ```
+
+
+---
+## Reading User Input
+
+```bash
+read name
+echo "Hello $name"
+```
+
+---
+
+## If Statement
+
+```bash
+if [ "$a" -eq "$b" ]
+then
+    echo "Equal"
+fi
+```
+
+---
+
+## For Loop
+
+```bash
+for i in 1 2 3
+do
+    echo $i
+done
+```
+
+---
+
+## While Loop
+
+```bash
+while true
+do
+    echo "Running"
+done
+```
+
+---
+
+## Arguments
+
+```bash
+echo $1      # First argument
+echo $2      # Second argument
+echo $#      # Number of arguments
+```

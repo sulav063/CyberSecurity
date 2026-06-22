@@ -32,3 +32,26 @@ kill pid            # Terminate process by ID
 killall process_name # Terminate all processes by name
 pgrep process_name  # Find process ID by name
 ```
+
+---
+### Package Information
+
+```bash
+apt show package-name          # Show package information
+apt list --installed           # List installed packages
+which python3                  # Find binary location
+```
+
+### Repository Management
+
+```bash
+cat /etc/apt/sources.list      # View repositories
+sudo add-apt-repository ppa:name/ppa
+```
+
+### Cleaning Packages
+
+```bash
+sudo apt autoremove            # Remove unused packages
+sudo apt clean                 # Clear package cache
+```
