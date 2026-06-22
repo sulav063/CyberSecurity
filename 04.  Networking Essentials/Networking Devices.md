@@ -1,65 +1,327 @@
+## Overview
 
-These are hardware components used to connect, manage, and secure communication between computers and other devices in a network.
-
-## 1. Router
-- Connects different networks (e.g., home network to the internet).
-- Routes data packets between networks using IP addresses.
-- Can provide firewall, NAT, and DHCP functions.
-- **Example:** Home router connects your LAN to your ISP.
-
-## 2. Switch
-- Connects devices within a **Local Area Network (LAN)**.
-- Operates at the **Data Link Layer (Layer 2)**.
-- Learns MAC addresses and forwards data only to the intended recipient.
-- More efficient and secure than hubs.
-
-## 3. Hub
-- Basic networking device that broadcasts data to **all** connected devices.
-- Works at **Layer 1 (Physical Layer)**.
-- No intelligence — creates network collisions.
-- Mostly **obsolete** today, replaced by switches.
-
-## 4. Modem
-- Converts **digital signals** to **analog** (modulation) and vice versa (demodulation).
-- Allows internet access over telephone lines, fiber, or cable.
-- Connects your home network to your ISP.
-
-## 5. Firewall
-- A **security device** (hardware or software) that monitors and filters network traffic.
-- Allows or blocks traffic based on predefined security rules.
-- Protects against **unauthorized access**, malware, and intrusions.
-
-## 6. Access Point (AP)
-- Allows **wireless devices (Wi-Fi)** to connect to a **wired LAN**.
-- Acts as a bridge between wireless clients and wired network infrastructure.
-- Used to expand wireless coverage.
-
-## 7. Repeater
-- **Boosts or regenerates signals** in a network to extend the transmission distance.
-- Used in long-distance or weak signal scenarios.
-- Works at the **Physical Layer (Layer 1)**.
-
-## 8. Bridge
-- Connects and filters traffic between two network segments.
-- Operates at the **Data Link Layer (Layer 2)**.
-- Can reduce collisions and divide networks logically.
-- Less common today, often replaced by switches.
-
-## 9. NIC (Network Interface Card)
-- Hardware component (internal or external) that allows a device to connect to a network.
-- Each NIC has a **unique MAC address**.
-- Can be wired (Ethernet NIC) or wireless (Wi-Fi NIC).
+Networking devices are hardware components that allow computers and networks to communicate with each other. Each device performs a specific role and operates at different layers of the OSI model.
 
 ---
 
-| Device        | Function                                       | OSI Layer       |
-|---------------|------------------------------------------------|-----------------|
-| Router        | Connects different networks, routes data       | Network (3)     |
-| Switch        | Forwards data within LAN using MAC addresses   | Data Link (2)   |
-| Hub           | Broadcasts data to all devices                 | Physical (1)    |
-| Modem         | Converts analog ↔ digital signals              | Physical (1)    |
-| Firewall      | Monitors and filters traffic for security      | Varies (3–7)    |
-| Access Point  | Connects wireless devices to a wired network   | Data Link (2)   |
-| Repeater      | Amplifies or regenerates signals               | Physical (1)    |
-| Bridge        | Connects network segments, filters traffic     | Data Link (2)   |
-| NIC           | Connects a device to a network                 | Data Link (2)   |
+## Hub
+
+A hub is a basic networking device that broadcasts incoming data to every connected device.
+
+### Characteristics
+
+- Operates at Layer 1 (Physical Layer)
+    
+- Does not understand MAC addresses
+    
+- Sends data to all ports
+    
+- Rarely used today
+    
+
+### Advantages
+
+- Simple to use
+    
+- Inexpensive
+    
+
+### Disadvantages
+
+- Creates unnecessary traffic
+    
+- Poor security
+    
+- Collisions occur frequently
+    
+
+---
+
+## Switch
+
+A switch forwards data only to the intended device.
+
+### Characteristics
+
+- Operates at Layer 2 (Data Link Layer)
+    
+- Uses MAC addresses
+    
+- Maintains a MAC Address Table
+    
+- Reduces collisions
+    
+
+### Advantages
+
+- Efficient communication
+    
+- Better performance than hubs
+    
+- Improved security
+    
+
+### Example
+
+If PC A sends data to PC B, the switch sends the frame only to PC B instead of every device.
+
+---
+
+## Router
+
+A router connects multiple networks together.
+
+### Characteristics
+
+- Operates at Layer 3 (Network Layer)
+    
+- Uses IP addresses
+    
+- Determines the best path for packets
+    
+
+### Functions
+
+- Connects LAN to WAN
+    
+- Provides internet access
+    
+- Separates broadcast domains
+    
+
+### Example
+
+Home Wi-Fi routers connect internal devices to the Internet.
+
+---
+
+## Bridge
+
+A bridge connects two network segments.
+
+### Characteristics
+
+- Operates at Layer 2
+    
+- Uses MAC addresses
+    
+- Reduces collisions
+    
+
+### Purpose
+
+Bridges divide large networks into smaller segments to improve performance.
+
+---
+
+## Repeater
+
+A repeater regenerates weak signals.
+
+### Characteristics
+
+- Operates at Layer 1
+    
+- Extends transmission distance
+    
+
+### Example
+
+Used in long cable networks where signal strength decreases.
+
+---
+
+## Gateway
+
+A gateway enables communication between different network architectures.
+
+### Functions
+
+- Protocol translation
+    
+- Connecting dissimilar networks
+    
+- Providing access to external resources
+    
+
+### Example
+
+A router can also function as a gateway.
+
+---
+
+## Modem
+
+A modem converts:
+
+- Digital signals → Analog signals
+    
+- Analog signals → Digital signals
+    
+
+### Purpose
+
+Provides Internet connectivity through:
+
+- DSL
+    
+- Cable
+    
+- Fiber
+    
+
+---
+
+## Firewall
+
+A firewall monitors and filters network traffic.
+
+### Functions
+
+- Block unauthorized access
+    
+- Allow trusted traffic
+    
+- Enforce security rules
+    
+
+### Types
+
+#### Hardware Firewall
+
+Dedicated physical device.
+
+#### Software Firewall
+
+Installed directly on operating systems.
+
+Examples:
+
+- Windows Defender Firewall
+    
+- UFW (Linux)
+    
+
+---
+
+## Intrusion Detection System (IDS)
+
+An IDS monitors traffic and generates alerts when suspicious activity is detected.
+
+### Characteristics
+
+- Detects attacks
+    
+- Does not block traffic
+    
+
+Examples:
+
+- Snort
+    
+- Suricata
+    
+
+---
+
+## Intrusion Prevention System (IPS)
+
+An IPS actively blocks malicious traffic.
+
+### Capabilities
+
+- Detect attacks
+    
+- Automatically prevent attacks
+    
+
+---
+
+## Access Point (AP)
+
+An Access Point provides wireless connectivity.
+
+### Functions
+
+- Broadcast Wi-Fi signals
+    
+- Connect wireless devices to wired networks
+    
+
+Examples:
+
+- Home Wi-Fi routers
+    
+- Enterprise wireless access points
+    
+
+---
+
+## Proxy Server
+
+A proxy acts as an intermediary between clients and servers.
+
+### Benefits
+
+- Hides client IP addresses
+    
+- Filters content
+    
+- Monitors traffic
+    
+
+Examples:
+
+- Squid Proxy
+    
+- Burp Suite Proxy
+    
+
+---
+
+## Load Balancer
+
+A load balancer distributes traffic among multiple servers.
+
+### Advantages
+
+- High availability
+    
+- Better performance
+    
+- Fault tolerance
+    
+
+---
+
+## Summary Table
+
+|Device|OSI Layer|
+|---|---|
+|Hub|Layer 1|
+|Repeater|Layer 1|
+|Bridge|Layer 2|
+|Switch|Layer 2|
+|Router|Layer 3|
+|Firewall|Layer 3/4|
+|Gateway|Multiple|
+|Access Point|Layer 2|
+|Proxy|Layer 7|
+
+---
+
+## Key Takeaways
+
+- Hubs broadcast traffic.
+    
+- Switches use MAC addresses.
+    
+- Routers use IP addresses.
+    
+- Firewalls filter traffic.
+    
+- IDS detects attacks.
+    
+- IPS prevents attacks.
+    
+- Access Points provide wireless connectivity.
