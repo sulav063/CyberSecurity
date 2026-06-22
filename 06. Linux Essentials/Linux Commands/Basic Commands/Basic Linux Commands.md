@@ -150,4 +150,205 @@ Prints a line of text or saves it to a file.
 ![[echo.png]]
 
 ---
+## find
+
+Searches for files and directories.
+
+### Search for a file
+
+```bash
+find /home -name file.txt
+```
+
+Searches for:
+
+```text
+file.txt
+```
+
+inside:
+
+```text
+/home
+```
+
+---
+
+### Search in current directory
+
+```bash
+find . -name notes.txt
+```
+
+Searches for:
+
+```text
+notes.txt
+```
+
+inside the current directory.
+
+
+---
+
+## locate
+
+Finds files quickly using a database.
+
+```bash
+locate passwd
+```
+
+Searches for files containing:
+
+```text
+passwd
+```
+
+If locate is not installed:
+
+```bash
+sudo apt install plocate
+```
+
+Update the database:
+
+```bash
+sudo updatedb
+```
+
+
+---
+
+## tree
+
+Displays directories in a tree structure.
+
+```bash
+tree
+```
+
+Example output:
+
+```text
+Documents
+├── notes.txt
+├── scripts
+└── projects
+```
+
+Install if missing:
+
+```bash
+sudo apt install tree
+```
+
+
+---
+
+## head
+
+Displays the first 10 lines of a file.
+
+```bash
+head file.txt
+```
+
+Display the first 20 lines:
+
+```bash
+head -20 file.txt
+```
+
+Useful for viewing large files quickly.
+
+
+---
+
+## tail
+
+Displays the last 10 lines of a file.
+
+```bash
+tail file.txt
+```
+
+Useful for checking the end of log files.
+
+---
+
+## tail -f
+
+Monitors files in real time.
+
+```bash
+tail -f logfile.log
+```
+
+Useful for:
+
+- Watching logs.
+    
+- Monitoring services.
+    
+- Troubleshooting applications.
+    
+
+Press:
+
+```text
+CTRL + C
+```
+
+to stop monitoring.
+
+---
+
+## less
+
+Views large files page by page.
+
+```bash
+less file.txt
+```
+
+Navigation:
+
+- ↑ ↓ → Move
+    
+- Space → Next page
+    
+- q → Quit
+    
+
+Useful for reading long files without opening an editor.
+
+---
+
+## Wildcards
+
+### Show all files
+
+```bash
+ls *
+```
+
+---
+
+### Show text files only
+
+```bash
+ls *.txt
+```
+
+---
+
+### Show Python files only
+
+```bash
+ls *.py
+```
+
+Wildcards help filter files by extension.
+
 
