@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06. Linux Essentials/Linux Commands/Crucial Directory and Files.md",
+                "file": "06. Linux Essentials/Linux Commands/Sudo Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Crucial Directory and Files"
+              "title": "Sudo Overview"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "e5a05800b24a732e",
   "lastOpenFiles": [
+    "06. Linux Essentials/Linux Commands/Crucial Directory and Files.md",
     "06. Linux Essentials/Linux Commands/User and Permissions.md",
     "06. Linux Essentials/Linux Commands/Untitled.md",
     "06. Linux Essentials/Linux Commands/Users and Permissions.md",
@@ -207,7 +208,6 @@
     "04.  Networking Essentials/Cisco Packet Tracer/NAT/NAT.md",
     "04.  Networking Essentials/Cisco Packet Tracer/Assignment - 3 Department DHCP/Assignment - 3 Department DHCP.md",
     "03. Introduction to Ethical Hacking/Ethical Hacking vs Penetration Testing.md",
-    "03. Introduction to Ethical Hacking/Types of Hackers.md",
     "16. Web Application fundamentals/Untitled",
     "16. Web Application fundamentals",
     "Untitled.base",
