@@ -1,5 +1,4 @@
 
-
 ## Overview
 
 Email Enumeration is the process of gathering information about email addresses associated with an organization or domain.
