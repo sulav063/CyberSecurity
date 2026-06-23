@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "11. Web Application/HTTP Methods.md",
+                "file": "Active Directory Overview/ii. HTTP Methods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTTP Methods"
+              "title": "ii. HTTP Methods"
+            }
+          },
+          {
+            "id": "9457a1e78c782ea7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory Overview/v. Cookies and Sessions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "v. Cookies and Sessions"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,12 +193,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e5a05800b24a732e",
+  "active": "3a806f7cc54b4f14",
   "lastOpenFiles": [
-    "11. Web Application/HTTP Basics.md",
-    "11. Web Application/HTTP Methods.md",
+    "Active Directory Overview/iv. HTTP Headers.md",
+    "Active Directory Overview/v. Cookies and Sessions.md",
+    "Active Directory Overview/ii. HTTP Methods.md",
+    "Active Directory Overview/iii. HTTP Status Codes.md",
+    "Active Directory Overview/i. HTTP Basics.md",
     "07. Reconnaissance/Google Dorking.md",
-    "11. Web Application",
+    "Active Directory Overview",
     "07. Reconnaissance/Untitled.md",
     "07. Reconnaissance/WHOIS Lookup.md",
     "07. Reconnaissance/Subdomain Enumeration.md",
@@ -206,9 +224,6 @@
     "04.  Networking Essentials/VPN.png",
     "04.  Networking Essentials/OSI model.md",
     "04.  Networking Essentials/Networking Devices.md",
-    "01. Introduction to Cyber security/Required Skills for Cybersecurity.md",
-    "08. Scanning & Enumeration/iii. Scanning with Nmap.md",
-    "08. Scanning & Enumeration/ii. Finding Live Hosts.md",
     "16. Web Application fundamentals/Untitled",
     "16. Web Application fundamentals",
     "Untitled.base",
