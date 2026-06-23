@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory Overview/ii. HTTP Methods.md",
+                "file": "11. Active Directory Overview/ii. Components of Active Directory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ii. HTTP Methods"
+              "title": "ii. Components of Active Directory"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory Overview/v. Cookies and Sessions.md",
+                "file": "12. AD Initial Attack/iii. AD Initial Attack SMB Relay Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "v. Cookies and Sessions"
+              "title": "iii. AD Initial Attack SMB Relay Attacks"
             }
           }
         ],
@@ -193,15 +193,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3a806f7cc54b4f14",
+  "active": "9457a1e78c782ea7",
   "lastOpenFiles": [
-    "Active Directory Overview/iv. HTTP Headers.md",
-    "Active Directory Overview/v. Cookies and Sessions.md",
-    "Active Directory Overview/ii. HTTP Methods.md",
-    "Active Directory Overview/iii. HTTP Status Codes.md",
-    "Active Directory Overview/i. HTTP Basics.md",
+    "12. AD Initial Attack/ii. AD Initial Attack LLMNR Poisoning.md",
+    "12. AD Initial Attack/iii. AD Initial Attack SMB Relay Attacks.md",
+    "12. AD Initial Attack/i. AD Initial Attack Introduction to LLMNR.md",
+    "11. Active Directory Overview/iv. Introduction to PowerShell.md",
+    "12. AD Initial Attack",
+    "11. Active Directory Overview/v. Cookies and Sessions.md",
+    "11. Active Directory Overview/iii. Understanding Users GPO and Policies.md",
+    "11. Active Directory Overview/ii. Components of Active Directory.md",
+    "11. Active Directory Overview/i. Introduction to Windows Active Directory.md",
     "07. Reconnaissance/Google Dorking.md",
-    "Active Directory Overview",
+    "11. Active Directory Overview",
     "07. Reconnaissance/Untitled.md",
     "07. Reconnaissance/WHOIS Lookup.md",
     "07. Reconnaissance/Subdomain Enumeration.md",
@@ -220,10 +224,7 @@
     "06. Linux Essentials/Linux Commands/Basic Commands/Basic Linux Commands.md",
     "06. Linux Essentials/Linux Commands/Basic Commands/whoami.png",
     "04.  Networking Essentials/Routing and Switching.md",
-    "04.  Networking Essentials/VPN and Remote Connections.md",
     "04.  Networking Essentials/VPN.png",
-    "04.  Networking Essentials/OSI model.md",
-    "04.  Networking Essentials/Networking Devices.md",
     "16. Web Application fundamentals/Untitled",
     "16. Web Application fundamentals",
     "Untitled.base",
@@ -232,7 +233,6 @@
     "10. Privilege Escalation",
     "9. Exploitation/v. Vulnerability Exploitation and Windows Password Cracking using MS17-010 (EternalBlue)",
     "09. Exploitation",
-    "06. Linux Essentials/Assignment.pdf",
     "06. Linux Essentials/Linux Directory Structure.png",
     "06. Linux Essentials/Linux Architcture.png",
     "06. Linux Essentials/Linux Commands/Basic Commands/vi2.png",
