@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07. Reconnaissance/Google Dorking.md",
+                "file": "11. Web Application/HTTP Methods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Google Dorking"
+              "title": "HTTP Methods"
             }
           }
         ]
@@ -180,8 +180,11 @@
   },
   "active": "e5a05800b24a732e",
   "lastOpenFiles": [
-    "07. Reconnaissance/Untitled.md",
+    "11. Web Application/HTTP Basics.md",
+    "11. Web Application/HTTP Methods.md",
     "07. Reconnaissance/Google Dorking.md",
+    "11. Web Application",
+    "07. Reconnaissance/Untitled.md",
     "07. Reconnaissance/WHOIS Lookup.md",
     "07. Reconnaissance/Subdomain Enumeration.md",
     "07. Reconnaissance/Email Enumeration.md",
@@ -206,8 +209,6 @@
     "01. Introduction to Cyber security/Required Skills for Cybersecurity.md",
     "08. Scanning & Enumeration/iii. Scanning with Nmap.md",
     "08. Scanning & Enumeration/ii. Finding Live Hosts.md",
-    "08. Scanning & Enumeration/i. Scanning & Enumeration.md",
-    "07. Reconnaissance/OSINT techniques.md",
     "16. Web Application fundamentals/Untitled",
     "16. Web Application fundamentals",
     "Untitled.base",
@@ -217,7 +218,6 @@
     "9. Exploitation/v. Vulnerability Exploitation and Windows Password Cracking using MS17-010 (EternalBlue)",
     "09. Exploitation",
     "06. Linux Essentials/Assignment.pdf",
-    "6. Linux Essentials/mso2395.tmp",
     "06. Linux Essentials/Linux Directory Structure.png",
     "06. Linux Essentials/Linux Architcture.png",
     "06. Linux Essentials/Linux Commands/Basic Commands/vi2.png",
