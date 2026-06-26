@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "9ef30db755e20dc7",
+        "id": "b8e2f71bc0687501",
         "type": "tabs",
         "children": [
           {
-            "id": "e5a05800b24a732e",
+            "id": "ad1d5ac1c6508891",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "11. Active Directory Overview/ii. Components of Active Directory.md",
+                "file": "12. AD Initial Attack/v. Gaining Shell Access.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ii. Components of Active Directory"
-            }
-          },
-          {
-            "id": "9457a1e78c782ea7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "12. AD Initial Attack/iii. AD Initial Attack SMB Relay Attacks.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "iii. AD Initial Attack SMB Relay Attacks"
+              "title": "v. Gaining Shell Access"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -155,27 +140,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10. Privilege Escalation/iii. Linux PrivEsc Techniques.md",
+                "file": "12. AD Initial Attack/v. Gaining Shell Access.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of iii. Linux PrivEsc Techniques"
-            }
-          },
-          {
-            "id": "946f2a811aa871e8",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of v. Gaining Shell Access"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -189,20 +164,21 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "9457a1e78c782ea7",
+  "active": "ad1d5ac1c6508891",
   "lastOpenFiles": [
-    "12. AD Initial Attack/ii. AD Initial Attack LLMNR Poisoning.md",
+    "12. AD Initial Attack/iv. IPv6 DNS Takeover using mitm6.md",
+    "12. AD Initial Attack/v. Gaining Shell Access.md",
     "12. AD Initial Attack/iii. AD Initial Attack SMB Relay Attacks.md",
+    "12. AD Initial Attack/ii. AD Initial Attack LLMNR Poisoning.md",
     "12. AD Initial Attack/i. AD Initial Attack Introduction to LLMNR.md",
+    "11. Active Directory Overview/ii. Components of Active Directory.md",
     "11. Active Directory Overview/iv. Introduction to PowerShell.md",
     "12. AD Initial Attack",
     "11. Active Directory Overview/v. Cookies and Sessions.md",
     "11. Active Directory Overview/iii. Understanding Users GPO and Policies.md",
-    "11. Active Directory Overview/ii. Components of Active Directory.md",
     "11. Active Directory Overview/i. Introduction to Windows Active Directory.md",
     "07. Reconnaissance/Google Dorking.md",
     "11. Active Directory Overview",
@@ -221,9 +197,7 @@
     "06. Linux Essentials/Linux Commands/Untitled.md",
     "06. Linux Essentials/Linux Commands/Users and Permissions.md",
     "06. Linux Essentials/Linux Commands/Networking Commands.md",
-    "06. Linux Essentials/Linux Commands/Basic Commands/Basic Linux Commands.md",
     "06. Linux Essentials/Linux Commands/Basic Commands/whoami.png",
-    "04.  Networking Essentials/Routing and Switching.md",
     "04.  Networking Essentials/VPN.png",
     "16. Web Application fundamentals/Untitled",
     "16. Web Application fundamentals",
