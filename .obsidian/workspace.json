@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "13. AD Enumeration/viii. Kerberos Authentication.md",
+                "file": "14. AD Post Attack Techniques/i. Pass Attacks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "viii. Kerberos Authentication"
+              "title": "i. Pass Attacks"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "13. AD Enumeration/viii. Kerberos Authentication.md",
+                "file": "14. AD Post Attack Techniques/i. Pass Attacks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of viii. Kerberos Authentication"
+              "title": "Outline of i. Pass Attacks"
             }
           }
         ],
@@ -169,12 +169,14 @@
   },
   "active": "f53c1e061c95694b",
   "lastOpenFiles": [
-    "13. AD Enumeration/vii. LDAP Fundamentals.md",
+    "13. AD Enumeration/viii. Kerberos Authentication.md",
+    "14. AD Post Attack Techniques/i. Pass Attacks.md",
+    "14. AD Post Attack Techniques",
+    "13. AD Enumeration/iii. Active Directory Architecture.md",
     "13. AD Enumeration/vi. Domain Controllers.md",
+    "13. AD Enumeration/vii. LDAP Fundamentals.md",
     "13. AD Enumeration/iv. Domains, Forests and Trees.md",
     "13. AD Enumeration/v. Organizational Units (OU).md",
-    "13. AD Enumeration/iii. Active Directory Architecture.md",
-    "13. AD Enumeration/viii. Kerberos Authentication.md",
     "13. AD Enumeration/ii. PingCastle Overview.md",
     "13. AD Enumeration/i. BloodHound.md",
     "13. AD Enumeration",
@@ -197,7 +199,6 @@
     "07. Reconnaissance/Email Enumeration.md",
     "07. Reconnaissance/DNS Enumeration.md",
     "06. Linux Essentials/Linux Commands/Shell Scripting.md",
-    "06. Linux Essentials/Linux Commands/Process Management.md",
     "06. Linux Essentials/Linux Commands/Basic Commands/whoami.png",
     "04.  Networking Essentials/VPN.png",
     "16. Web Application fundamentals/Untitled",
@@ -206,7 +207,6 @@
     "10.  Privilege Escalation",
     "Untitled 1.base",
     "10. Privilege Escalation",
-    "9. Exploitation/v. Vulnerability Exploitation and Windows Password Cracking using MS17-010 (EternalBlue)",
     "06. Linux Essentials/Linux Directory Structure.png",
     "06. Linux Essentials/Linux Architcture.png",
     "06. Linux Essentials/Linux Commands/Basic Commands/vi2.png",
